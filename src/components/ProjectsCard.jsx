@@ -14,16 +14,16 @@ const ProjectsCard = (props) => {
 
       {/* Project Name */}
       <div>
-        <h3>{props.projectName}</h3>
+        <h3 className="sm:text-lg tablet:text-xl">{props.projectName}</h3>
       </div>
 
       {/* Card bottom */}
       <div>
         {/* View demo */}
-        <h3>View Demo</h3>
+        <h3 className="sm:text-lg tablet:text-xl">View Demo</h3>
 
         {/* Project Link */}
-        <h3>Project Link</h3>
+        <h3 className="sm:text-lg tablet:text-xl">Project Link</h3>
       </div>
 
     </div>

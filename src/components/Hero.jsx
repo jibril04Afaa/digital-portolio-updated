@@ -10,7 +10,7 @@ const Hero = () => {
     </div> */}
 
     {/* Major container */}
-    <div className="flex sm:flex-col tablet:flex-row justify-around">
+    <div className="flex sm: text-xl flex-col tablet:flex-row justify-around ">
       {/* Hero Image Container TODO: Include watery animation border */}
       <div className="flex justify-center">
         <img src={MyImage}

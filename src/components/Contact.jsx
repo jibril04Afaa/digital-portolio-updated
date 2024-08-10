@@ -9,13 +9,13 @@ const Contact = () => {
     <>
         <div className="bg-green-800 p-6 mt-3 mb-6">
             {/* Title */}
-            <h3 className="text-left my-4 text-xl">Contact 
+            <h3 className="text-left my-4 text-xl sm:text-xl tablet:text-2xl">Contact 
                 <span className="text-lime-200 p-1">ME</span>
             </h3>
 
             {/* Contact items */}
 
-            <div className="sm:flex flex-col tablet:grid grid-cols-3 laptop:grid-cols-4 gap-2">
+            <div className="sm:flex flex-col text-lg tablet:grid grid-cols-3 text-xl laptop:grid-cols-4 gap-2 text-2xl">
                 {/* Email */}
                 <div className="border-2 p-4 rounded-xl flex flex-col items-left mb-6">
                     <FaEnvelope className=""/>

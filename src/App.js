@@ -29,8 +29,8 @@ const App = () => {
 
         {/* Skills Cards */}
         <div className="">
-          <h3 className="mt-16 mb-4 px-8 text-xl text-left">My 
-            <span className="p-1 text-lime-200">
+          <h3 className="mt-16 mb-4 px-8 text-xl text-left sm:text-xl tablet:text-3xl">My 
+            <span className="p-1 text-lime-200 sm:text-xl tablet:text-3xl">
               Skills
             </span>
           </h3>
@@ -110,8 +110,8 @@ const App = () => {
 
           {/* Projects container title */}
           <div className="mt-16 mb-2">
-            <h3 className="px-8 text-xl text-left">My
-              <span className="text-lime-200 p-1">Projects</span>
+            <h3 className="px-8 text-xl text-left sm:text-xl tablet:text-3xl">My
+              <span className="text-lime-200 p-1 sm:text-xl tablet:text-3xl">Projects</span>
             </h3>
           </div>
 
