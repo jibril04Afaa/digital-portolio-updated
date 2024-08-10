@@ -104,28 +104,32 @@ const App = () => {
 
         </div>
 
-
-        {/* Project Cards */}
-        <div>
-          <h3 className="mt-16 px-8 text-xl text-left">My
-            <span className="text-lime-200 p-1">Projects</span>
-          </h3>
-        </div>
         
-        <div className="grid grid-cols-2 m-4 ">
-          <ProjectsCard
-          projectName = "Bantama Enteprise"
-          />
+        {/* Container for project components */}
+        <div className="bg-green-400">
 
-          <ProjectsCard
-          projectName = "African Urban Dictionary"
-          />
+          {/* Projects container title */}
+          <div className="mt-16 mb-2 ">
+            <h3 className="px-8 text-xl text-left">My
+              <span className="text-lime-200 p-1">Projects</span>
+            </h3>
+          </div>
 
-          <ProjectsCard
-          projectName = "Art Exploration Tinder"
-          />
+          <div className="grid grid-cols-2">
+            <ProjectsCard
+            projectName = "Bantama Enteprise"
+            />
 
+            <ProjectsCard
+            projectName = "African Urban Dictionary"
+            />
+
+            <ProjectsCard
+            projectName = "Art Exploration Tinder"
+            />
+          </div>
         </div>
+
 
 
         <Contact/>
