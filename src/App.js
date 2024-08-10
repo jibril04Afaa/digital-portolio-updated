@@ -28,7 +28,7 @@ const App = () => {
         <About/>
 
         {/* Skills Cards */}
-        <div>
+        <div className="">
           <h3 className="mt-16 mb-4 px-8 text-xl text-left">My 
             <span className="p-1 text-lime-200">
               Skills
@@ -36,7 +36,7 @@ const App = () => {
           </h3>
         </div>
 
-        <div className="grid grid-cols-2">
+        <div className="grid font-bold sm:grid-cols-2 tablet:grid-cols-3">
 
           {/* HTML */}
           <SkillsCard
@@ -109,25 +109,28 @@ const App = () => {
         <div className="bg-green-400">
 
           {/* Projects container title */}
-          <div className="mt-16 mb-2 ">
+          <div className="mt-16 mb-2">
             <h3 className="px-8 text-xl text-left">My
               <span className="text-lime-200 p-1">Projects</span>
             </h3>
           </div>
 
-          <div className="grid grid-cols-2">
-            <ProjectsCard
-            projectName = "Bantama Enteprise"
-            />
+          <div className="">
+            <div className="grid sm:grid-cols-2 tablet:grid-cols-3">
+              <ProjectsCard
+              projectName = "Bantama Enteprise"
+              />
 
-            <ProjectsCard
-            projectName = "African Urban Dictionary"
-            />
+              <ProjectsCard
+              projectName = "African Urban Dictionary"
+              />
 
-            <ProjectsCard
-            projectName = "Art Exploration Tinder"
-            />
+              <ProjectsCard
+              projectName = "Art Exploration Tinder"
+              />
+            </div>
           </div>
+          
         </div>
 
 

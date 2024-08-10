@@ -4,7 +4,9 @@ import Me from "../img/me.jpg"
 const About = () => {
   return (
     <>
-      <div className="bg-green-400 my-8 p-8">
+      <div className=
+      "flex sm:flex-col bg-green-400 my-8 tablet:flex-row"
+      >
 
         {/* Image or Animation */}
         <div className="flex justify-center">
@@ -16,7 +18,7 @@ const About = () => {
         </div>
         
         {/* About text */}
-        <div className="my-4">
+        <div className="">
           <h2 className="text-xl my-2">About
             <span className="text-lime-200 p-1">
               Me
