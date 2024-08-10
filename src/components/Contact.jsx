@@ -1,31 +1,30 @@
 
+
 const Contact = () => {
   return (
     <>
-        <div className="bg-green-400 text-white">
-            <h3 className="text-center my-4">Contact 
+        <div className="bg-green-400 p-6">
+            {/* Title */}
+            <h3 className="text-left my-4 text-xl">Contact 
                 <span className="text-lime-200 p-1">ME</span>
             </h3>
 
-            <div className="flex justify-between text-sm">
-                {/* Email */}
-                <div>
-                    <img src="" alt="" />
-                    <h3>jibrilBA04@gmail.com</h3>
-                    <h3>bja5590@psu.edu</h3>
-                </div>
+            {/* Email */}
+            <div>
+                
+                <h3>jibrilBA04@gmail.com</h3>
+            </div>
 
-                {/* Location */}
-                <div>
-                    <img src="" alt="" />
-                    <h3>State College, Pennsylvania</h3>
-                </div>
+            {/* Location */}
+            <div>
 
-                {/* Phone */}
-                <div>
-                    <img src="" alt="" />
-                    <h3>+1 (412)478-9202</h3>
-                </div>
+                <h3>State College, PA</h3>
+            </div>
+
+            {/* Phone */}
+            <div>
+
+                <h3>+1 (412) 478-9202</h3>
             </div>
         </div>
     </>
