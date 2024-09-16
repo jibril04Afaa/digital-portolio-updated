@@ -15,9 +15,14 @@ import javascriptImage from "./img/javascript.webp"
 import nodeImage from "./img/node.webp"
 import postgresImage from "./img/postgres.png"
 import csharp from "./img/csharp.png"
-
+import springboot from "./img/springboot.png"
+import java from "./img/java-logo-png.png"
 import tailwindImage from "./img/tailwind.png"
 import reactImage from "./img/react.png"
+
+// project images
+import aub from "./img/AUB.png"
+import forex from "./img/forex-bureau.png"
 
 
 const App = () => {
@@ -39,25 +44,18 @@ const App = () => {
         <div className="grid font-bold sm:grid-cols-2 tablet:grid-cols-3">
 
           {/* HTML */}
-          <SkillsCard
+          {/* <SkillsCard
           skillImage = {htmlImage}
           width = "200px"
           skillName = "HTML"
-          />
+          /> */}
 
           {/* CSS */}
-          <SkillsCard
+          {/* <SkillsCard
           skillImage = {cssImage}
           width = "90px"
           skillName = "CSS"
-          />
-
-          {/* SSCS/SASS */}
-          <SkillsCard
-          skillImage = {scssImage}
-          width = "250px"
-          skillName = "SCSS/SASS"
-          />
+          /> */}
 
           {/* Javascript */}
           <SkillsCard
@@ -73,12 +71,31 @@ const App = () => {
           skillName = "ReactJS"
           />
 
+          {/* Java */}
+          <SkillsCard
+          skillImage = {java}
+          />
+
+          {/* Springboot */}
+          <SkillsCard
+          skillImage = {springboot}
+          width = "250px"
+          //skillName = "Springboot"
+          />
+
+          {/* SSCS/SASS */}
+          <SkillsCard
+          skillImage = {scssImage}
+          width = "250px"
+          //skillName = "SCSS/SASS"
+          />
+
           {/* Tailwind */}
           <SkillsCard
           skillImage = {tailwindImage}
-          width = "100px"
+          width = "70px"
           height = "100px"
-          skillName = "Tailwind"
+          skillName = "TailwindCSS"
           />
 
           {/* Node */}
@@ -88,12 +105,14 @@ const App = () => {
           skillName = "NodeJS"
           />
 
+          
+
           {/* C# */}
-          <SkillsCard
+          {/* <SkillsCard
           skillImage = {csharp}
           width = "100px"
           skillName = "C#"
-          />
+          /> */}
 
           {/* Postgres */}
           <SkillsCard
@@ -109,31 +128,42 @@ const App = () => {
         <div className="bg-green-400">
 
           {/* Projects container title */}
-          <div className="mt-16 mb-2">
+          <div className="sm: mt-16 mb-2 pt-12 pb-6">
             <h3 className="px-8 text-xl text-left sm:text-xl tablet:text-3xl">My
               <span className="text-lime-200 p-1 sm:text-xl tablet:text-3xl">Projects</span>
             </h3>
           </div>
 
           <div className="">
-            <div className="grid sm:grid-cols-2 tablet:grid-cols-3">
+            <div className="border-2 grid items content-center sm:grid-cols-2 tablet:grid-cols-3">
+              
               <ProjectsCard
-              projectName = "Bantama Enteprise"
+              projectName = "African Urban Dictionary"
+              projectImage = {aub}
+              />
+
+              <ProjectsCard
+              projectName = "Online Forex Bureau"
+              projectImage = {forex}
               />
 
               <ProjectsCard
               projectName = "African Urban Dictionary"
+              projectImage = {aub}
+              />
+
+              {/* <ProjectsCard
+              projectName = "Art Exploration Tinder"
               />
 
               <ProjectsCard
-              projectName = "Art Exploration Tinder"
-              />
+              projectName = "Explore Philosophy"
+              /> */}
+
             </div>
           </div>
           
         </div>
-
-
 
         <Contact/>
 

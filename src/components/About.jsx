@@ -26,10 +26,11 @@ const About = () => {
           </h2>
 
           <p className="sm:text-lg tablet:text-2xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Accusantium quaerat pariatur nesciunt ut laborum et sed 
-            suscipit illo, sunt porro cumque voluptate error obcaecati 
-            asperiores rerum recusandae, tempora fugit molestiae.
+            As international junior studying Computer Science at 
+            Penn State University, my interests lie in full-stack 
+            development of web and mobile apps, Artificial Intelligence,
+            and reading on a wide range of topics.
+            
           </p>
         </div>
 

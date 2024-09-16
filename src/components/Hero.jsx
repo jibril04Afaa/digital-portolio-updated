@@ -5,9 +5,11 @@ const Hero = () => {
   return (
     <>
     {/* Logo  */}
-    {/* <div>
+    {/* 
+    <div>
       <h1>Jibril</h1>
-    </div> */}
+    </div> 
+    */}
 
     {/* Major container */}
     <div className="flex sm: text-xl flex-col tablet:flex-row justify-around ">
@@ -32,9 +34,9 @@ const Hero = () => {
                   Computer Science student
                 </span>
                 
-                & 
+                {/* &  */}
                 <span className="text-lime-200 font-bold p-1">
-                  Software Engineer
+                  {/* Software Engineering Enthusiast */}
                 </span>
                 
                 </p>
