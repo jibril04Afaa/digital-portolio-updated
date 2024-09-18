@@ -5,7 +5,7 @@ const About = () => {
   return (
     <>
       <div className=
-      "flex sm:flex-col p-6 gap-6 bg-green-400 my-8 tablet:flex-row mt-24">
+      "flex sm:flex-col p-6  bg-green-400  tablet:flex-row">
 
         {/* Image or Animation */}
         <div className="flex justify-center">

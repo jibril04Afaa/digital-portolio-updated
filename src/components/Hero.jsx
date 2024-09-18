@@ -26,7 +26,7 @@ const Hero = () => {
       </div>
 
       {/* Hero Text Container */}
-      <div className="text-white p-8">
+      <div className=" text-white p-8">
           <div className="sm: flex flex-col my-8">
               <p>Hello, my name is</p>
               <h2 className="text-lime-200 font-bold">JIBRIL BAABA AFAA</h2>
