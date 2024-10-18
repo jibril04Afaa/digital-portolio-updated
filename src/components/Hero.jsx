@@ -46,11 +46,11 @@ const Hero = () => {
 
 
           <div className="sm:flex-col w-64 my-4 md:flex-row justify-between lg:flex-row">
-            {/* <a href="/tech-resume.pdf" download="tech-resume.pdf"> */}
+            <a href="/tech-resume.pdf" download="tech-resume.pdf">
               <button className="rounded-3xl px-4 py-2 my-2 bg-lime-200 text-green-800 font-bold border-none">
                   Download Resume
               </button>
-            {/* </a> */}
+            </a>
 
             <a href="https://drive.google.com/drive/u/0/folders/1mYUiQxjQcnm2nLvuSBAeuA5ia6TaGEaR"
             target="_blank">
