@@ -1,5 +1,6 @@
 
-import Me from "../img/me.jpg"
+//import Me from "../img/me.jpg"
+import MeBrownShirt from "../img/me-brown-shirt.jpg"
 
 const About = () => {
   return (
@@ -8,7 +9,7 @@ const About = () => {
 
         {/* Image or Animation */}
         <div className="flex justify-center">
-          <img src={Me} 
+          <img src={MeBrownShirt} 
           alt="A picture of me" 
           width="200px"
           height="100px"

@@ -9,6 +9,8 @@ import ProjectsCard from "./components/ProjectsCard"
 
 import Me from "./img/me.jpg"
 
+
+
 // skill images
 import htmlImage from "./img/html.png"
 import cssImage from "./img/css.png"
@@ -18,7 +20,7 @@ import nodeImage from "./img/node.webp"
 import postgresImage from "./img/postgres.png"
 import csharp from "./img/csharp.png"
 import springboot from "./img/springboot.png"
-import java from "./img/java-logo-png.png"
+import dotnet from "./img/dotnet.webp"
 import tailwindImage from "./img/tailwind.png"
 import reactImage from "./img/react.png"
 
@@ -78,16 +80,17 @@ const App = () => {
             skillName = "ReactJS"
             />
 
-            {/* Java */}
+            {/* C# */}
             <SkillsCard
-            skillImage = {java}
+            skillImage = {csharp}
+            width = "100px"
             />
 
-            {/* Springboot */}
+            {/* .NET */}
             <SkillsCard
-            skillImage = {springboot}
-            width = "250px"
-            //skillName = "Springboot"
+            skillImage = {dotnet}
+            width = "100px"
+            
             />
 
             {/* SSCS/SASS */}
