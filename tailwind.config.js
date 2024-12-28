@@ -12,7 +12,12 @@ module.exports = {
       "laptop": "1024px",
       "large-laptop": "1440px",
     },
-    extend: {},
+    extend: {
+      colors: {
+        customDark: 'rgba(2, 0, 36, 1)',
+        customGreen: 'rgba(87, 167, 77, 1)',
+      },
+    },
   },
   plugins: [],
 }

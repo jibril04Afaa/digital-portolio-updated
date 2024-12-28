@@ -1,4 +1,18 @@
 import csharp from '../img/csharp.png'
+import java from '../img/java-logo-png.png'
+import python from '../img/python.png'
+import dotnet from '../img/dotnet.webp'
+import js from '../img/javascript.webp'
+import node from '../img/node.webp'
+import postgres from '../img/postgres.png'
+import reactNative from '../img/react-native.jpg'
+import sass from '../img/scss.png'
+import react from '../img/react.png'
+import tailwind from '../img/tailwind.png'
+import linux from '../img/linux.png'
+import ts from '../img/ts.png'
+import express from '../img/express.jpg'
+
 
 const Skills = () => {
   return (
@@ -7,8 +21,8 @@ const Skills = () => {
       <div>
         <div>
           {/* Title */}
-          <div>
-            <p>My Skills</p>
+          <div className='flex justify-center items-center mt-4'>
+            <p className='text-3xl font-bold'>My Skills</p>
           </div>
 
           {/* Text about skills*/}
@@ -17,7 +31,7 @@ const Skills = () => {
           </div>
 
           {/* Skills Sections  */}
-          <div>
+          <div className='mt-10'>
             {/* Languages */}
             <div></div>
 
@@ -29,20 +43,15 @@ const Skills = () => {
           </div>
 
           {/* Skills catalog(ue) */}
-          <div className='flex flex-wrap'>
+          <div className='flex flex-wrap gap-4'>
             {/* C# */}
             <div className='border-2 rounded-xl flex flex-col items-center gap-2 w-28 p-2'>
-              {/* Skill Image */}
               <div>
                 <img src={csharp} alt="" width="40px" height="40px"/>
               </div>
-
-              {/* Percentage of how good I am at it */}
               <div>
                 <p>75%</p>
               </div>
-
-              {/* Skill Name */}
               <div>
                 <p>C#</p>
               </div>
@@ -50,201 +59,187 @@ const Skills = () => {
 
             {/* Java */}
             <div className='border-2 rounded-xl flex flex-col items-center gap-2 w-28 p-2'>
-              {/* Skill Image */}
               <div>
-                <img src="" alt="" />
+                <img src={java} alt="" />
               </div>
-
-              {/* Percentage of how good I am at it */}
               <div>
-                <p></p>
+                <p>60%</p>
               </div>
-
-              {/* Skill Name */}
               <div>
-                <p></p>
+                <p>Java</p>
               </div>
             </div>
 
             {/* Python */}
             <div className='border-2 rounded-xl flex flex-col items-center gap-2 w-28 p-2'>
-              {/* Skill Image */}
               <div>
-                <img src="" alt="" />
+                <img src={python} alt="" />
               </div>
-
-              {/* Percentage of how good I am at it */}
               <div>
-                <p></p>
+                <p>80%</p>
               </div>
-
-              {/* Skill Name */}
               <div>
-                <p></p>
+                <p>Python</p>
               </div>
             </div>
 
-            {/* Javascript */}
+            {/* JavaScript */}
             <div className='border-2 rounded-xl flex flex-col items-center gap-2 w-28 p-2'>
-              {/* Skill Image */}
               <div>
-                <img src="" alt="" />
+                <img src={js} alt="" />
               </div>
-
-              {/* Percentage of how good I am at it */}
               <div>
-                <p></p>
+                <p>70%</p>
               </div>
-
-              {/* Skill Name */}
               <div>
-                <p></p>
+                <p>JavaScript</p>
               </div>
             </div>
 
-            {/* Typescript */}
+            {/* TypeScript */}
             <div className='border-2 rounded-xl flex flex-col items-center gap-2 w-28 p-2'>
-              {/* Skill Image */}
               <div>
-                <img src="" alt="" />
+                <img src={ts} alt="" />
               </div>
-
-              {/* Percentage of how good I am at it */}
               <div>
-                <p></p>
+                <p>65%</p>
               </div>
-
-              {/* Skill Name */}
               <div>
-                <p></p>
+                <p>TypeScript</p>
               </div>
             </div>
 
             {/* C */}
             <div className='border-2 rounded-xl flex flex-col items-center gap-2 w-28 p-2'>
-              {/* Skill Image */}
               <div>
                 <img src="" alt="" />
               </div>
-
-              {/* Percentage of how good I am at it */}
               <div>
-                <p></p>
+                <p>85%</p>
               </div>
-
-              {/* Skill Name */}
               <div>
-                <p></p>
+                <p>C</p>
               </div>
             </div>
 
             {/* TailwindCSS */}
             <div className='border-2 rounded-xl flex flex-col items-center gap-2 w-28 p-2'>
-              {/* Skill Image */}
               <div>
-                <img src="" alt="" />
+                <img src={tailwind} alt="" />
               </div>
-
-              {/* Percentage of how good I am at it */}
               <div>
-                <p></p>
+                <p>80%</p>
               </div>
-
-              {/* Skill Name */}
               <div>
-                <p></p>
+                <p>TailwindCSS</p>
               </div>
             </div>
 
             {/* SASS/SCSS */}
             <div className='border-2 rounded-xl flex flex-col items-center gap-2 w-28 p-2'>
-              {/* Skill Image */}
               <div>
-                <img src="" alt="" />
+                <img src={sass} alt="" />
               </div>
-
-              {/* Percentage of how good I am at it */}
               <div>
-                <p></p>
+                <p>70%</p>
               </div>
-
-              {/* Skill Name */}
               <div>
-                <p></p>
+                <p>SASS/SCSS</p>
               </div>
             </div>
 
             {/* Linux */}
             <div className='border-2 rounded-xl flex flex-col items-center gap-2 w-28 p-2'>
-              {/* Skill Image */}
               <div>
-                <img src="" alt="" />
+                <img src={linux} alt="" />
               </div>
-
-              {/* Percentage of how good I am at it */}
               <div>
-                <p></p>
+                <p>75%</p>
               </div>
-
-              {/* Skill Name */}
               <div>
-                <p></p>
+                <p>Linux</p>
               </div>
             </div>
 
             {/* .NET */}
             <div className='border-2 rounded-xl flex flex-col items-center gap-2 w-28 p-2'>
-              {/* Skill Image */}
               <div>
-                <img src="" alt="" />
+                <img src={dotnet} alt="" />
               </div>
-
-              {/* Percentage of how good I am at it */}
               <div>
-                <p></p>
+                <p>70%</p>
               </div>
-
-              {/* Skill Name */}
               <div>
-                <p></p>
+                <p>.NET</p>
               </div>
             </div>
 
             {/* ReactJS */}
             <div className='border-2 rounded-xl flex flex-col items-center gap-2 w-28 p-2'>
-              {/* Skill Image */}
               <div>
-                <img src="" alt="" />
+                <img src={react} alt="" />
               </div>
-
-              {/* Percentage of how good I am at it */}
               <div>
-                <p></p>
+                <p>75%</p>
               </div>
-
-              {/* Skill Name */}
               <div>
-                <p></p>
+                <p>ReactJS</p>
               </div>
             </div>
 
             {/* React-Native */}
             <div className='border-2 rounded-xl flex flex-col items-center gap-2 w-28 p-2'>
-              {/* Skill Image */}
               <div>
-                <img src="" alt="" />
+                <img src={reactNative} alt="" />
               </div>
-
-              {/* Percentage of how good I am at it */}
               <div>
-                <p></p>
+                <p>60%</p>
               </div>
-
-              {/* Skill Name */}
               <div>
-                <p></p>
+                <p>React-Native</p>
               </div>
             </div>
+              
+            {/* NodeJS */}  
+            <div className='border-2 rounded-xl flex flex-col items-center gap-2 w-28 p-2'>
+              <div className=''>
+                <img src={node} alt="" />
+              </div>
+              <div>
+                <p>60%</p>
+              </div>
+              <div>
+                <p>NodeJS</p>
+              </div>
+            </div>
+
+            {/* Express */}
+            <div className='border-2 rounded-xl flex flex-col items-center gap-2 w-28 p-2'>
+              <div>
+                <img src={express} alt="" />
+              </div>
+              <div>
+                <p>60%</p>
+              </div>
+              <div>
+                <p>ExpressJS</p>
+              </div>
+            </div>
+
+            {/* PostgreSQL */}
+            <div className='border-2 rounded-xl flex flex-col items-center gap-2 w-28 p-2'>
+              <div>
+                <img src={postgres} alt="" />
+              </div>
+              <div>
+                <p>60%</p>
+              </div>
+              <div>
+                <p>PostgreSQL</p>
+              </div>
+            </div>
+
+
 
           </div>
         </div>
