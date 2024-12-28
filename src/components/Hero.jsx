@@ -16,13 +16,16 @@ const Hero = () => {
     {/* Major container */}
     <div className="flex sm: text-xl flex-col tablet:flex-row justify-around ">
       {/* Hero Image Container TODO: Include watery animation border */}
-      <div className="flex justify-center">
-        <img src={MyImage}
-        alt="A picture of me"
-        width="150px"
-        height="250px"
-        className="rounded-es-2xl my-4 md:max-w-sm lg:max-w-md tablet:w-60 laptop:w-64 large-laptop:w-80"
-        />
+
+      <div>
+        <div className="flex justify-center">
+          <img src={MyImage}
+          alt="A picture of me"
+          width="150px"
+          height="250px"
+          className="rounded-es-2xl my-4 md:max-w-sm lg:max-w-md tablet:w-60 laptop:w-64 large-laptop:w-80"
+          />
+        </div>
       </div>
 
       {/* Hero Text Container */}
