@@ -1,4 +1,4 @@
-import React from 'react'
+import csharp from '../img/csharp.png'
 
 const Skills = () => {
   return (
@@ -29,27 +29,27 @@ const Skills = () => {
           </div>
 
           {/* Skills catalog(ue) */}
-          <div className='flex'>
+          <div className='flex flex-wrap'>
             {/* C# */}
-            <div>
+            <div className='border-2 rounded-xl flex flex-col items-center gap-2 w-28 p-2'>
               {/* Skill Image */}
               <div>
-                <img src="" alt="" />
+                <img src={csharp} alt="" width="40px" height="40px"/>
               </div>
 
               {/* Percentage of how good I am at it */}
               <div>
-                <p></p>
+                <p>75%</p>
               </div>
 
               {/* Skill Name */}
               <div>
-                <p></p>
+                <p>C#</p>
               </div>
             </div>
 
             {/* Java */}
-            <div>
+            <div className='border-2 rounded-xl flex flex-col items-center gap-2 w-28 p-2'>
               {/* Skill Image */}
               <div>
                 <img src="" alt="" />
@@ -67,7 +67,7 @@ const Skills = () => {
             </div>
 
             {/* Python */}
-            <div>
+            <div className='border-2 rounded-xl flex flex-col items-center gap-2 w-28 p-2'>
               {/* Skill Image */}
               <div>
                 <img src="" alt="" />
@@ -85,7 +85,7 @@ const Skills = () => {
             </div>
 
             {/* Javascript */}
-            <div>
+            <div className='border-2 rounded-xl flex flex-col items-center gap-2 w-28 p-2'>
               {/* Skill Image */}
               <div>
                 <img src="" alt="" />
@@ -103,7 +103,7 @@ const Skills = () => {
             </div>
 
             {/* Typescript */}
-            <div>
+            <div className='border-2 rounded-xl flex flex-col items-center gap-2 w-28 p-2'>
               {/* Skill Image */}
               <div>
                 <img src="" alt="" />
@@ -121,7 +121,7 @@ const Skills = () => {
             </div>
 
             {/* C */}
-            <div>
+            <div className='border-2 rounded-xl flex flex-col items-center gap-2 w-28 p-2'>
               {/* Skill Image */}
               <div>
                 <img src="" alt="" />
@@ -139,7 +139,7 @@ const Skills = () => {
             </div>
 
             {/* TailwindCSS */}
-            <div>
+            <div className='border-2 rounded-xl flex flex-col items-center gap-2 w-28 p-2'>
               {/* Skill Image */}
               <div>
                 <img src="" alt="" />
@@ -157,7 +157,7 @@ const Skills = () => {
             </div>
 
             {/* SASS/SCSS */}
-            <div>
+            <div className='border-2 rounded-xl flex flex-col items-center gap-2 w-28 p-2'>
               {/* Skill Image */}
               <div>
                 <img src="" alt="" />
@@ -175,7 +175,7 @@ const Skills = () => {
             </div>
 
             {/* Linux */}
-            <div>
+            <div className='border-2 rounded-xl flex flex-col items-center gap-2 w-28 p-2'>
               {/* Skill Image */}
               <div>
                 <img src="" alt="" />
@@ -193,7 +193,7 @@ const Skills = () => {
             </div>
 
             {/* .NET */}
-            <div>
+            <div className='border-2 rounded-xl flex flex-col items-center gap-2 w-28 p-2'>
               {/* Skill Image */}
               <div>
                 <img src="" alt="" />
@@ -211,7 +211,7 @@ const Skills = () => {
             </div>
 
             {/* ReactJS */}
-            <div>
+            <div className='border-2 rounded-xl flex flex-col items-center gap-2 w-28 p-2'>
               {/* Skill Image */}
               <div>
                 <img src="" alt="" />
@@ -229,7 +229,7 @@ const Skills = () => {
             </div>
 
             {/* React-Native */}
-            <div>
+            <div className='border-2 rounded-xl flex flex-col items-center gap-2 w-28 p-2'>
               {/* Skill Image */}
               <div>
                 <img src="" alt="" />
