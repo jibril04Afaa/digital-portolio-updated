@@ -4,11 +4,11 @@ const Projects = () => {
   return (
     <div>
       {/* Inner Container */}
-      <div>
+      <div className='border-2 mt-32'>
         <div>
           {/* Title */}
-          <div>
-            <h2>My Recent Projects</h2>
+          <div className='flex justify-center items-center mt-4'>
+            <h2 className='text-3xl font-bold'>My Recent Projects</h2>
           </div>
 
           {/* Text about projects */}
@@ -17,35 +17,35 @@ const Projects = () => {
           </div>
 
           {/* Sections */}
-          <div>
+          <div className='flex justify-around mt-10'>
             {/* All */}
-            <div>
+            <div className='border-2 p-2 rounded-3xl'>
               <h2>All</h2>
             </div>
 
             {/* Websites */}
-            <div>
+            <div className='border-2 p-2 rounded-3xl'>
               <h2>Websites</h2>
             </div>
 
             {/* Apps */}
-            <div>
+            <div className='border-2 p-2 rounded-3xl'>
               <h2>Apps</h2>
             </div>
 
             {/* AI */}
-            <div>
+            <div className='border-2 p-2 rounded-3xl'>
               <h2>AI</h2>
             </div>
 
             {/* Research */}
-            <div>
+            <div className='border-2 p-2 rounded-3xl'>
               <h2>Research</h2>
             </div>
           </div>
 
           {/* Projects catalog */}
-          <div>
+          <div className='flex'>
             {/* First Project */}
             <div></div>
 
