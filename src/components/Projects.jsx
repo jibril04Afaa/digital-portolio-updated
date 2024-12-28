@@ -23,6 +23,8 @@ const Projects = () => {
               <h2>All</h2>
             </div>
 
+            
+
             {/* Websites */}
             <div className='border-2 p-2 rounded-3xl'>
               <h2>Websites</h2>

@@ -32,30 +32,219 @@ const Skills = () => {
           <div className='flex'>
             {/* C# */}
             <div>
-              
+              {/* Skill Image */}
+              <div>
+                <img src="" alt="" />
+              </div>
+
+              {/* Percentage of how good I am at it */}
+              <div>
+                <p></p>
+              </div>
+
+              {/* Skill Name */}
+              <div>
+                <p></p>
+              </div>
             </div>
+
             {/* Java */}
-            <div></div>
+            <div>
+              {/* Skill Image */}
+              <div>
+                <img src="" alt="" />
+              </div>
+
+              {/* Percentage of how good I am at it */}
+              <div>
+                <p></p>
+              </div>
+
+              {/* Skill Name */}
+              <div>
+                <p></p>
+              </div>
+            </div>
+
             {/* Python */}
-            <div></div>
+            <div>
+              {/* Skill Image */}
+              <div>
+                <img src="" alt="" />
+              </div>
+
+              {/* Percentage of how good I am at it */}
+              <div>
+                <p></p>
+              </div>
+
+              {/* Skill Name */}
+              <div>
+                <p></p>
+              </div>
+            </div>
+
             {/* Javascript */}
-            <div></div>
+            <div>
+              {/* Skill Image */}
+              <div>
+                <img src="" alt="" />
+              </div>
+
+              {/* Percentage of how good I am at it */}
+              <div>
+                <p></p>
+              </div>
+
+              {/* Skill Name */}
+              <div>
+                <p></p>
+              </div>
+            </div>
+
             {/* Typescript */}
-            <div></div>
+            <div>
+              {/* Skill Image */}
+              <div>
+                <img src="" alt="" />
+              </div>
+
+              {/* Percentage of how good I am at it */}
+              <div>
+                <p></p>
+              </div>
+
+              {/* Skill Name */}
+              <div>
+                <p></p>
+              </div>
+            </div>
+
             {/* C */}
-            <div></div>
+            <div>
+              {/* Skill Image */}
+              <div>
+                <img src="" alt="" />
+              </div>
+
+              {/* Percentage of how good I am at it */}
+              <div>
+                <p></p>
+              </div>
+
+              {/* Skill Name */}
+              <div>
+                <p></p>
+              </div>
+            </div>
+
             {/* TailwindCSS */}
-            <div></div>
+            <div>
+              {/* Skill Image */}
+              <div>
+                <img src="" alt="" />
+              </div>
+
+              {/* Percentage of how good I am at it */}
+              <div>
+                <p></p>
+              </div>
+
+              {/* Skill Name */}
+              <div>
+                <p></p>
+              </div>
+            </div>
+
             {/* SASS/SCSS */}
-            <div></div>
+            <div>
+              {/* Skill Image */}
+              <div>
+                <img src="" alt="" />
+              </div>
+
+              {/* Percentage of how good I am at it */}
+              <div>
+                <p></p>
+              </div>
+
+              {/* Skill Name */}
+              <div>
+                <p></p>
+              </div>
+            </div>
+
             {/* Linux */}
-            <div></div>
+            <div>
+              {/* Skill Image */}
+              <div>
+                <img src="" alt="" />
+              </div>
+
+              {/* Percentage of how good I am at it */}
+              <div>
+                <p></p>
+              </div>
+
+              {/* Skill Name */}
+              <div>
+                <p></p>
+              </div>
+            </div>
+
             {/* .NET */}
-            <div></div>
+            <div>
+              {/* Skill Image */}
+              <div>
+                <img src="" alt="" />
+              </div>
+
+              {/* Percentage of how good I am at it */}
+              <div>
+                <p></p>
+              </div>
+
+              {/* Skill Name */}
+              <div>
+                <p></p>
+              </div>
+            </div>
+
             {/* ReactJS */}
-            <div></div>
+            <div>
+              {/* Skill Image */}
+              <div>
+                <img src="" alt="" />
+              </div>
+
+              {/* Percentage of how good I am at it */}
+              <div>
+                <p></p>
+              </div>
+
+              {/* Skill Name */}
+              <div>
+                <p></p>
+              </div>
+            </div>
+
             {/* React-Native */}
-            <div></div>
+            <div>
+              {/* Skill Image */}
+              <div>
+                <img src="" alt="" />
+              </div>
+
+              {/* Percentage of how good I am at it */}
+              <div>
+                <p></p>
+              </div>
+
+              {/* Skill Name */}
+              <div>
+                <p></p>
+              </div>
+            </div>
 
           </div>
         </div>
