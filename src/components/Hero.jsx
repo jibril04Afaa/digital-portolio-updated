@@ -1,4 +1,5 @@
 import MeBrown from "../img/me-brown-shirt.jpg"
+import HeroFooter from "../components/HeroFooter"
 
 import { CiLinkedin } from "react-icons/ci"
 import { FaGithub } from "react-icons/fa"
@@ -6,9 +7,10 @@ import { FaGithub } from "react-icons/fa"
 
 const Hero = () => {
   return (
+    <>
     <div>
       {/* Inner container */}
-      <div className="flex justify-around mt-16">
+      <div className="flex justify-around mt-12">
         
         {/* Left side text */}
         <div className="border-2 flex flex-col gap-6 p-2">
@@ -16,6 +18,19 @@ const Hero = () => {
           <div>
             <p className="font-bold text-2xl">I am Jibril</p>
             <h1 className="font-bold text-4xl">Software Engineer + <br /> Computer Science Student</h1>
+          </div>
+
+          {/* Other text */}
+          <div>
+            <p>
+              Lorem ipsum dolor sit<br />
+              amet consectetur adipisicing<br />
+              elit. Soluta voluptates veritatis,<br />
+              aspernatur enim labore accusamus officiis<br />
+              similique iste aperiam tempore! Fugit<br />
+              corrupti ipsa ratione voluptate assumenda<br />
+              debitis? Eveniet, cupiditate quos.<br />
+            </p>
           </div>
 
           {/* Buttons and social links */}
@@ -38,19 +53,7 @@ const Hero = () => {
               </div>
             </div>
           </div>
-
-          {}
-          <div>
-            <p>
-              Lorem ipsum dolor sit<br />
-              amet consectetur adipisicing<br />
-              elit. Soluta voluptates veritatis,<br />
-              aspernatur enim labore accusamus officiis<br />
-              similique iste aperiam tempore! Fugit<br />
-              corrupti ipsa ratione voluptate assumenda<br />
-              debitis? Eveniet, cupiditate quos.<br />
-            </p>
-          </div>
+        
         </div>
 
         {/* Right side image */}
@@ -59,6 +62,13 @@ const Hero = () => {
         </div>
       </div>
     </div>
+
+    {/* Hero Footer */}
+    <div>
+      <HeroFooter/>
+    </div>
+    </>
+
   )
 }
 
