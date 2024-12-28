@@ -13,7 +13,7 @@ const Hero = () => {
       <div className="flex justify-around mt-12">
         
         {/* Left side text */}
-        <div className="border-2 flex flex-col gap-6 p-2">
+        <div className="flex flex-col gap-6 p-2">
           {/* Text */}
           <div>
             <p className="font-bold text-2xl">I am Jibril</p>

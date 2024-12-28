@@ -29,8 +29,34 @@ const Skills = () => {
           </div>
 
           {/* Skills catalog(ue) */}
-          <div>
-            
+          <div className='flex'>
+            {/* C# */}
+            <div>
+              
+            </div>
+            {/* Java */}
+            <div></div>
+            {/* Python */}
+            <div></div>
+            {/* Javascript */}
+            <div></div>
+            {/* Typescript */}
+            <div></div>
+            {/* C */}
+            <div></div>
+            {/* TailwindCSS */}
+            <div></div>
+            {/* SASS/SCSS */}
+            <div></div>
+            {/* Linux */}
+            <div></div>
+            {/* .NET */}
+            <div></div>
+            {/* ReactJS */}
+            <div></div>
+            {/* React-Native */}
+            <div></div>
+
           </div>
         </div>
       </div>
