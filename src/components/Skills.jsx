@@ -16,7 +16,7 @@ import express from '../img/express.jpg'
 
 const Skills = () => {
   return (
-    <div>
+    <div className='border-2 mt-32'>
       {/* Inner Container */}
       <div>
         <div>
