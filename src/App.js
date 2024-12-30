@@ -10,6 +10,7 @@ import Skills from "./components/Skills"
 import Projects from "./components/Projects"
 import Contact from "./components/Contact"
 import ErrorPage from "./components/ErrorRoute"
+import XPandEduc from "./components/XPandEduc"
 
 const App = () => {
   return (
@@ -29,6 +30,7 @@ const App = () => {
             <Link to="/about">About</Link>
             <Link to="/skills">Skills</Link>
             <Link to="/projects">Projects</Link>
+            <Link to="/xp-education">XP + educ</Link>
             <Link to="/contact">Contact</Link>
           </nav>
 
@@ -49,6 +51,7 @@ const App = () => {
               <Route path="/skills" element={<Skills/>}/>
               <Route path="/projects" element={<Projects/>}/>
               <Route path="/contact" element={<Contact/>}/> 
+              <Route path="/xp-education" element={<XPandEduc/>}/> 
               <Route path="*" element={<ErrorPage/>}/> {/* Error Route */}
             </Routes>
         </div>
@@ -58,6 +61,7 @@ const App = () => {
       <About/>
       <Skills/>
       <Projects/>
+      <XPandEduc/>
     </>
 
   )
