@@ -1,37 +1,39 @@
-import csharp from '../img/csharp.png'
-import java from '../img/java-logo-png.png'
-import python from '../img/python.png'
-import dotnet from '../img/dotnet.webp'
-import js from '../img/javascript.webp'
-import node from '../img/node.webp'
-import postgres from '../img/postgres.png'
-import reactNative from '../img/react-native.jpg'
-import sass from '../img/scss.png'
-import react from '../img/react.png'
-import tailwind from '../img/tailwind.png'
-import linux from '../img/linux.png'
-import ts from '../img/ts.png'
-import express from '../img/express.jpg'
+import { FaJava } from "react-icons/fa"; // Java
+import { FaReact } from "react-icons/fa"; // React
+import { TbBrandCSharp } from "react-icons/tb"; // C#
+import { FaPython } from "react-icons/fa"; // Python
+import { AiOutlineDotNet } from "react-icons/ai"; // .NET
+import { RiJavascriptFill } from "react-icons/ri"; // JavaScript
+import { FaNode } from "react-icons/fa"; // Node.js
+import { BiLogoPostgresql } from "react-icons/bi"; // PostgreSQL
+import { FaSass } from "react-icons/fa"; // SASS/SCSS
+import { RiTailwindCssFill } from "react-icons/ri"; // Tailwind CSS
+import { FaLinux } from "react-icons/fa"; // Linux
+import { SiTypescript } from "react-icons/si"; // TypeScript
+import { SiExpress } from "react-icons/si"; // Express.js
 
 
 const Skills = () => {
   return (
-    <div className='border-2 mt-32'>
+    <>
+
+    <div className="border-2 mt-32 ">
+      
       {/* Inner Container */}
       <div>
         <div>
           {/* Title */}
-          <div className='flex justify-center items-center mt-4'>
-            <p className='text-3xl font-bold'>My Skills</p>
+          <div className="flex justify-center items-center mt-4">
+            <p className="text-3xl font-bold">My Skills</p>
           </div>
 
-          {/* Text about skills*/}
+          {/* Text about skills */}
           <div>
             <p></p>
           </div>
 
-          {/* Skills Sections  */}
-          <div className='mt-10'>
+          {/* Skills Sections */}
+          <div className="mt-10">
             {/* Languages */}
             <div></div>
 
@@ -43,209 +45,117 @@ const Skills = () => {
           </div>
 
           {/* Skills catalog(ue) */}
-          <div className='flex flex-wrap gap-4'>
+          <div className="flex flex-wrap gap-4 justify-center ml-20 mr-20">
             {/* C# */}
-            <div className='border-2 rounded-xl flex flex-col items-center gap-2 w-28 p-2'>
-              <div>
-                <img src={csharp} alt="" width="40px" height="40px"/>
-              </div>
-              <div>
-                <p>75%</p>
-              </div>
-              <div>
-                <p>C#</p>
-              </div>
+            <div className="border-4 rounded-xl flex flex-col items-center gap-2 w-28 p-2 bg-lightPurple">
+              <TbBrandCSharp size={40} />
+              <p>75%</p>
+              <p>C#</p>
             </div>
 
             {/* Java */}
-            <div className='border-2 rounded-xl flex flex-col items-center gap-2 w-28 p-2'>
-              <div>
-                <img src={java} alt="" />
-              </div>
-              <div>
-                <p>60%</p>
-              </div>
-              <div>
-                <p>Java</p>
-              </div>
+            <div className="border-4 rounded-xl flex flex-col items-center gap-2 w-28 p-2 bg-lightPurple">
+              <FaJava size={40} />
+              <p>60%</p>
+              <p>Java</p>
             </div>
 
             {/* Python */}
-            <div className='border-2 rounded-xl flex flex-col items-center gap-2 w-28 p-2'>
-              <div>
-                <img src={python} alt="" />
-              </div>
-              <div>
-                <p>80%</p>
-              </div>
-              <div>
-                <p>Python</p>
-              </div>
+            <div className="border-4 rounded-xl flex flex-col items-center gap-2 w-28 p-2 bg-lightPurple">
+              <FaPython size={40} />
+              <p>80%</p>
+              <p>Python</p>
             </div>
 
             {/* JavaScript */}
-            <div className='border-2 rounded-xl flex flex-col items-center gap-2 w-28 p-2'>
-              <div>
-                <img src={js} alt="" />
-              </div>
-              <div>
-                <p>70%</p>
-              </div>
-              <div>
-                <p>JavaScript</p>
-              </div>
+            <div className="border-4 rounded-xl flex flex-col items-center gap-2 w-28 p-2 bg-lightPurple">
+              <RiJavascriptFill size={40} />
+              <p>70%</p>
+              <p>JavaScript</p>
             </div>
 
             {/* TypeScript */}
-            <div className='border-2 rounded-xl flex flex-col items-center gap-2 w-28 p-2'>
-              <div>
-                <img src={ts} alt="" />
-              </div>
-              <div>
-                <p>65%</p>
-              </div>
-              <div>
-                <p>TypeScript</p>
-              </div>
+            <div className="border-4 rounded-xl flex flex-col items-center gap-2 w-28 p-2 bg-lightPurple">
+              <SiTypescript size={40} />
+              <p>65%</p>
+              <p>TypeScript</p>
             </div>
 
             {/* C */}
-            <div className='border-2 rounded-xl flex flex-col items-center gap-2 w-28 p-2'>
-              <div>
-                <img src="" alt="" />
-              </div>
-              <div>
-                <p>85%</p>
-              </div>
-              <div>
-                <p>C</p>
-              </div>
+            <div className="border-4 rounded-xl flex flex-col items-center gap-2 w-28 p-2 bg-lightPurple">
+              <p>85%</p>
+              <p>C</p>
             </div>
 
             {/* TailwindCSS */}
-            <div className='border-2 rounded-xl flex flex-col items-center gap-2 w-28 p-2'>
-              <div>
-                <img src={tailwind} alt="" />
-              </div>
-              <div>
-                <p>80%</p>
-              </div>
-              <div>
-                <p>TailwindCSS</p>
-              </div>
+            <div className="border-4 rounded-xl flex flex-col items-center gap-2 w-28 p-2 bg-lightPurple">
+              <RiTailwindCssFill size={40} />
+              <p>80%</p>
+              <p>TailwindCSS</p>
             </div>
 
             {/* SASS/SCSS */}
-            <div className='border-2 rounded-xl flex flex-col items-center gap-2 w-28 p-2'>
-              <div>
-                <img src={sass} alt="" />
-              </div>
-              <div>
-                <p>70%</p>
-              </div>
-              <div>
-                <p>SASS/SCSS</p>
-              </div>
+            <div className="border-4 rounded-xl flex flex-col items-center gap-2 w-28 p-2 bg-lightPurple">
+              <FaSass size={40} />
+              <p>70%</p>
+              <p>SASS/SCSS</p>
             </div>
 
             {/* Linux */}
-            <div className='border-2 rounded-xl flex flex-col items-center gap-2 w-28 p-2'>
-              <div>
-                <img src={linux} alt="" />
-              </div>
-              <div>
-                <p>75%</p>
-              </div>
-              <div>
-                <p>Linux</p>
-              </div>
+            <div className="border-4 rounded-xl flex flex-col items-center gap-2 w-28 p-2 bg-lightPurple">
+              <FaLinux size={40} />
+              <p>75%</p>
+              <p>Linux</p>
             </div>
 
             {/* .NET */}
-            <div className='border-2 rounded-xl flex flex-col items-center gap-2 w-28 p-2'>
-              <div>
-                <img src={dotnet} alt="" />
-              </div>
-              <div>
-                <p>70%</p>
-              </div>
-              <div>
-                <p>.NET</p>
-              </div>
+            <div className="border-4 rounded-xl flex flex-col items-center gap-2 w-28 p-2 bg-lightPurple">
+              <AiOutlineDotNet size={40} />
+              <p>70%</p>
+              <p>.NET</p>
             </div>
 
             {/* ReactJS */}
-            <div className='border-2 rounded-xl flex flex-col items-center gap-2 w-28 p-2'>
-              <div>
-                <img src={react} alt="" />
-              </div>
-              <div>
-                <p>75%</p>
-              </div>
-              <div>
-                <p>ReactJS</p>
-              </div>
+            <div className="border-4 rounded-xl flex flex-col items-center gap-2 w-28 p-2 bg-lightPurple">
+              <FaReact size={40} />
+              <p>75%</p>
+              <p>ReactJS</p>
             </div>
 
             {/* React-Native */}
-            <div className='border-2 rounded-xl flex flex-col items-center gap-2 w-28 p-2'>
-              <div>
-                <img src={reactNative} alt="" />
-              </div>
-              <div>
-                <p>60%</p>
-              </div>
-              <div>
-                <p>React-Native</p>
-              </div>
+            <div className="border-4 rounded-xl flex flex-col items-center gap-2 w-28 p-2 bg-lightPurple">
+              <FaReact size={40} /> {/* Using React icon */}
+              <p>60%</p>
+              <p>React-Native</p>
             </div>
-              
-            {/* NodeJS */}  
-            <div className='border-2 rounded-xl flex flex-col items-center gap-2 w-28 p-2'>
-              <div className=''>
-                <img src={node} alt="" />
-              </div>
-              <div>
-                <p>60%</p>
-              </div>
-              <div>
-                <p>NodeJS</p>
-              </div>
+
+            {/* NodeJS */}
+            <div className="border-4 rounded-xl flex flex-col items-center gap-2 w-28 p-2 bg-lightPurple">
+              <FaNode size={40} />
+              <p>60%</p>
+              <p>NodeJS</p>
             </div>
 
             {/* Express */}
-            <div className='border-2 rounded-xl flex flex-col items-center gap-2 w-28 p-2'>
-              <div>
-                <img src={express} alt="" />
-              </div>
-              <div>
-                <p>60%</p>
-              </div>
-              <div>
-                <p>ExpressJS</p>
-              </div>
+            <div className="border-4 rounded-xl flex flex-col items-center gap-2 w-28 p-2 bg-lightPurple">
+              <SiExpress size={40} />
+              <p>60%</p>
+              <p>ExpressJS</p>
             </div>
 
             {/* PostgreSQL */}
-            <div className='border-2 rounded-xl flex flex-col items-center gap-2 w-28 p-2'>
-              <div>
-                <img src={postgres} alt="" />
-              </div>
-              <div>
-                <p>60%</p>
-              </div>
-              <div>
-                <p>PostgreSQL</p>
-              </div>
+            <div className="border-4 rounded-xl flex flex-col items-center gap-2 w-28 p-2 bg-lightPurple">
+              <BiLogoPostgresql size={40} />
+              <p>60%</p>
+              <p>PostgreSQL</p>
             </div>
-
-
-
           </div>
         </div>
       </div>
     </div>
-  )
-}
 
-export default Skills
+    </>
+  );
+};
+
+export default Skills;

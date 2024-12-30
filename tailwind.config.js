@@ -16,6 +16,7 @@ module.exports = {
       colors: {
         customDark: 'rgba(2, 0, 36, 1)',
         customGreen: 'rgba(87, 167, 77, 1)',
+        lightPurple: '#FCEEFE',
       },
     },
   },
