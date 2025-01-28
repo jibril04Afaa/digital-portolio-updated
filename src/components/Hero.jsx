@@ -12,8 +12,7 @@ const Hero = () => {
 
     <div className="sm:text-sm">
       {/* Inner container */}
-      <div className="flex sm:flex-col tablet:flex-row justify-around mt-12">
-
+      <div className="flex sm:flex-col-reverse mt-2 tablet:flex-row justify-around mt-12">
         
         {/* Left side text */}
         <div className="flex flex-col gap-6 p-2">
@@ -58,7 +57,7 @@ const Hero = () => {
         </div>
 
         {/* Right side image */}
-        <div className="sm:flex justify-center items-center tablet:flex-none">
+        <div className="sm:flex justify-center items-center w-44 tablet:flex-none">
           <img src={MeBrown} alt="" width="300px" height="150px" className="rounded-3xl"/>
         </div>
       </div>

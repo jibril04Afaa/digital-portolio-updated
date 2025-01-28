@@ -6,7 +6,7 @@ const XPandEduc = () => {
     <div className="mt-32">
         {/* Inner Container */}
         <div className="sm:flex justify-center items-center">
-            <div className="flex sm:flex-col tablet:justify-around">
+            <div className="flex sm:flex-col">
                 {/* Experience */}
                 <div className="sm:items-center tablet:flex-col w-96 gap-4">
                     {/* Title */}
@@ -18,10 +18,10 @@ const XPandEduc = () => {
                     {/* Experiences stuff */}
                     <div className="flex items-center tablet:w-80 flex-col gap-2">
                         {/* Internship 1 */}
-                        <div className="border-2 rounded-2xl sm:w-64 tablet: p-4 w-96 cursor-pointer">
+                        <div className="cursor-pointer p-4 border-2 rounded-2xl w-full sm:w-4/5 tablet:w-96">
                             {/* Timeline */}
                             <div>
-                                <p> Jan 2025 - Present</p>
+                                <p>Jan 2025 - Present</p>
                             </div>
 
                             {/* Title */}
@@ -41,7 +41,7 @@ const XPandEduc = () => {
                         </div>
 
                         {/* Research 1 */}
-                        <div className="border-2 rounded-2xl sm:w-64 tablet: p-4 w-96 cursor-pointer">
+                        <div className="cursor-pointer p-4 border-2 rounded-2xl w-full sm:w-4/5 tablet:w-96">
                             {/* Timeline */}
                             <div>
                                 <p>Jan 2025 - Present</p>
@@ -65,7 +65,8 @@ const XPandEduc = () => {
 
 
                         {/* Internship 2 */}
-                        <div className="border-2 rounded-2xl sm:w-64 tablet: p-4 w-96 cursor-pointer">
+                        <div className="cursor-pointer p-4 border-2 rounded-2xl w-full sm:w-4/5 tablet:w-96">
+
                             {/* Timeline */}
                             <div>
                                 <p> May 2024 - August 2024</p>
@@ -89,7 +90,7 @@ const XPandEduc = () => {
 
 
                         {/* RA */}
-                        <div className="border-2 rounded-2xl sm:w-64 tablet: p-4 w-96 cursor-pointer">
+                        <div className="cursor-pointer p-4 border-2 rounded-2xl w-full sm:w-4/5 tablet:w-96">
                             {/* Timeline */}
                             <div>
                                 <p> May 2024 - August 2024</p>
@@ -115,7 +116,7 @@ const XPandEduc = () => {
                 </div>
 
                 {/* Education */}
-                <div className="flex flex-col items-center w-96 gap-4">
+                <div className="flex items-center tablet:w-80 flex-col gap-2">
                     {/* Title */}
                     <div className='flex items-center sm:mt-8 mb-2'>
                         <LuGraduationCap className="text-4xl"/>
@@ -123,9 +124,9 @@ const XPandEduc = () => {
                     </div>
 
                     {/* Education stuff */}
-                    <div className="tablet:w-80 flex flex-col gap-2">
+                    <div className="flex items-center tablet:w-80 flex-col gap-2">
                         {/* Education 1 */}
-                        <div className="border-2 rounded-2xl sm:w-64 tablet: p-4 w-96 cursor-pointer">
+                        <div className="cursor-pointer p-4 border-2 rounded-2xl w-full sm:w-4/5 tablet:w-96">
                             {/* Timeline */}
                             <div>
                                 <p>Expected Graduation - June 2026</p>
