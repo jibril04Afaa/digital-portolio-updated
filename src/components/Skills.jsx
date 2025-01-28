@@ -17,7 +17,7 @@ const Skills = () => {
   return (
     <>
 
-    <div className="border-2 mt-32 ">
+    <div className="mt-32 ">
       
       {/* Inner Container */}
       <div>

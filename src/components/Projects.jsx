@@ -17,34 +17,57 @@ const Projects = () => {
           </div>
 
           {/* Sections */}
-          <div className='flex justify-around mt-10'>
-            {/* All */}
-            <div className='border-2 p-2 rounded-3xl'>
-              <h2>All</h2>
+
+          <div>
+            {/* Section Titles */}
+            <div className='flex justify-around mt-10'>
+              {/* All */}
+              <div className='border-2 p-2 rounded-3xl'>
+                <h2>All</h2>
+
+              </div>
+
+              
+
+              {/* Websites */}
+              <div className='border-2 p-2 rounded-3xl'>
+                <h2>Websites</h2>
+              </div>
+
+
+              {/* Apps */}
+              <div className='border-2 p-2 rounded-3xl'>
+                <h2>Apps</h2>
+              </div>
+
+              {/* AI */}
+              <div className='border-2 p-2 rounded-3xl'>
+                <h2>AI</h2>
+              </div>
+
+              {/* Research */}
+              <div className='border-2 p-2 rounded-3xl'>
+                <h2>Research</h2>
+              </div>
             </div>
 
-            
-
-            {/* Websites */}
-            <div className='border-2 p-2 rounded-3xl'>
-              <h2>Websites</h2>
-            </div>
-
-            {/* Apps */}
-            <div className='border-2 p-2 rounded-3xl'>
-              <h2>Apps</h2>
-            </div>
-
-            {/* AI */}
-            <div className='border-2 p-2 rounded-3xl'>
-              <h2>AI</h2>
-            </div>
-
-            {/* Research */}
-            <div className='border-2 p-2 rounded-3xl'>
-              <h2>Research</h2>
+            {/* Inner Section */}
+            {/* Website 1 */}
+            <div>
+              <div>
+                <div>
+                  {/* Container */}
+                  <div>
+                    
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
+
+
+
+
 
           {/* Projects catalog */}
           <div className='flex'>

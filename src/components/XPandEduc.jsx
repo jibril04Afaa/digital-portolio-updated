@@ -21,6 +21,53 @@ const XPandEduc = () => {
                         <div className="border-2 rounded-2xl p-4 w-96 cursor-pointer">
                             {/* Timeline */}
                             <div>
+                                <p> Jan 2025 - Present</p>
+                            </div>
+
+                            {/* Title */}
+                            <div>
+                                <p className="font-bold">Web Developer Intern</p>
+                            </div>
+
+                            {/* Company */}
+                            <div>
+                                <p>Alli Marketplace</p>
+                            </div>
+
+                            {/* Location */}
+                            <div>
+                                <p>Remote</p>
+                            </div>
+                        </div>
+
+                        {/* Research 1 */}
+                        <div className="border-2 rounded-2xl p-4 w-96 cursor-pointer">
+                            {/* Timeline */}
+                            <div>
+                                <p>Jan 2025 - Present</p>
+                            </div>
+
+                            {/* Title */}
+                            <div>
+                                <p className="font-bold">Research Assistant</p>
+                            </div>
+
+                            {/* Company */}
+                            <div>
+                                <p>Penn State University</p>
+                            </div>
+
+                            {/* Location */}
+                            <div>
+                                <p>Remote</p>
+                            </div>
+                        </div>
+
+
+                        {/* Internship 2 */}
+                        <div className="border-2 rounded-2xl p-4 w-96 cursor-pointer">
+                            {/* Timeline */}
+                            <div>
                                 <p> May 2024 - August 2024</p>
                             </div>
 
@@ -40,74 +87,6 @@ const XPandEduc = () => {
                             </div>
                         </div>
 
-                        {/* Internship 2 */}
-                        <div className="border-2 rounded-2xl p-4 w-96 cursor-pointer">
-                            {/* Timeline */}
-                            <div>
-                                <p> May 2024 - August 2024</p>
-                            </div>
-
-                            {/* Title */}
-                            <div>
-                                <p>Software Engineer Intern</p>
-                            </div>
-
-                            {/* Company */}
-                            <div>
-                                <p>Axon Information Systems</p>
-                            </div>
-
-                            {/* Location */}
-                            <div>
-                                <p>Accra, Ghana</p>
-                            </div>
-                        </div>
-
-                        {/* Research 1 */}
-                        <div className="border-2 rounded-2xl p-4 w-96 cursor-pointer">
-                            {/* Timeline */}
-                            <div>
-                                <p> May 2024 - August 2024</p>
-                            </div>
-
-                            {/* Title */}
-                            <div>
-                                <p>Software Engineer Intern</p>
-                            </div>
-
-                            {/* Company */}
-                            <div>
-                                <p>Axon Information Systems</p>
-                            </div>
-
-                            {/* Location */}
-                            <div>
-                                <p>Accra, Ghana</p>
-                            </div>
-                        </div>
-
-                        {/* Hackathon 1 */}
-                        <div className="border-2 rounded-2xl p-4 w-96 cursor-pointer">
-                            {/* Timeline */}
-                            <div>
-                                <p> May 2024 - August 2024</p>
-                            </div>
-
-                            {/* Title */}
-                            <div>
-                                <p>Software Engineer Intern</p>
-                            </div>
-
-                            {/* Company */}
-                            <div>
-                                <p>Axon Information Systems</p>
-                            </div>
-
-                            {/* Location */}
-                            <div>
-                                <p>Accra, Ghana</p>
-                            </div>
-                        </div>
 
                         {/* RA */}
                         <div className="border-2 rounded-2xl p-4 w-96 cursor-pointer">
@@ -118,42 +97,20 @@ const XPandEduc = () => {
 
                             {/* Title */}
                             <div>
-                                <p>Software Engineer Intern</p>
+                                <p className="font-bold">Resident Assistant</p>
                             </div>
 
                             {/* Company */}
                             <div>
-                                <p>Axon Information Systems</p>
+                                <p>Penn State University</p>
                             </div>
 
                             {/* Location */}
                             <div>
-                                <p>Accra, Ghana</p>
+                                <p>State College, PA</p>
                             </div>
                         </div>
 
-                        {/* Accountant */}
-                        <div className="border-2 rounded-2xl p-4 w-96 cursor-pointer">
-                            {/* Timeline */}
-                            <div>
-                                <p> May 2024 - August 2024</p>
-                            </div>
-
-                            {/* Title */}
-                            <div>
-                                <p>Software Engineer Intern</p>
-                            </div>
-
-                            {/* Company */}
-                            <div>
-                                <p>Axon Information Systems</p>
-                            </div>
-
-                            {/* Location */}
-                            <div>
-                                <p>Accra, Ghana</p>
-                            </div>
-                        </div>
                     </div>
                 </div>
 
@@ -171,47 +128,25 @@ const XPandEduc = () => {
                         <div className="border-2 rounded-2xl p-4 w-96 cursor-pointer">
                             {/* Timeline */}
                             <div>
-                                <p> May 2024 - August 2024</p>
+                                <p>Expected Graduation - June 2026</p>
                             </div>
 
                             {/* Title */}
                             <div>
-                                <p>Software Engineer Intern</p>
+                                <p className="font-bold">B.S Computer Science</p>
                             </div>
 
                             {/* Company */}
                             <div>
-                                <p>Axon Information Systems</p>
+                                <p>The Pennsylvania State University</p>
                             </div>
 
                             {/* Location */}
                             <div>
-                                <p>Accra, Ghana</p>
+                                <p>State College, PA</p>
                             </div>
                         </div>
 
-                        {/* Education 2 */}
-                        <div className="border-2 rounded-2xl p-4 w-96 cursor-pointer">
-                            {/* Timeline */}
-                            <div>
-                                <p> May 2024 - August 2024</p>
-                            </div>
-
-                            {/* Title */}
-                            <div>
-                                <p>Software Engineer Intern</p>
-                            </div>
-
-                            {/* Company */}
-                            <div>
-                                <p>Axon Information Systems</p>
-                            </div>
-
-                            {/* Location */}
-                            <div>
-                                <p>Accra, Ghana</p>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
