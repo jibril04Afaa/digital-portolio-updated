@@ -1,4 +1,9 @@
-import React from 'react'
+import EBookReader from '../img/e-book-reader.png'
+import AfricanUB from '../img/AfricanUB.png'
+import KnowTheQuran from '../img/know-the-Quran.png'
+import Forex from "../img/forex-bureau.png"
+
+import ProjectProp from "../components/ProjectProp"
 
 const Projects = () => {
   return (
@@ -53,16 +58,61 @@ const Projects = () => {
 
             {/* Inner Section */}
             {/* Website 1 */}
-            <div>
-              <div>
-                <div>
-                  {/* Container */}
-                  <div>
-                    
-                  </div>
-                </div>
-              </div>
+            <div className='flex justify-around flex-wrap'>
+              <ProjectProp
+              image = {EBookReader}
+              projectTitle = "E-Book Reader"
+              langOrFramework1 = "JavaScript"
+              langOrFramework2 = "React"
+              langOrFramework3 = "C#"
+              langOrFramework4 = "ASP.NET Core"
+              langOrFramework5 = "TailwindCSS"
+              projectDescription = "A full stack E-Book reader built with a beautiful ReactJS frontend and TailwindCSS styling, and a secure backend with the ASP.NET Core framework on C#, using MVC architecture."
+              />
+
+              <ProjectProp
+              image = {AfricanUB}
+              projectTitle = "African Urban Dictionary"
+              langOrFramework1 = "JavaScript"
+              langOrFramework2 = "React"
+              langOrFramework3 = "C#"
+              langOrFramework4 = "ASP.NET Core"
+              langOrFramework5 = "TailwindCSS"
+              projectDescription = "A fully responsive Urban Dictionary for African Slang terms built with ReactJS and TailwindCSS, with an ASP.NET Core backend."
+              />
+
+              <ProjectProp
+              image = {KnowTheQuran}
+              projectTitle = "Know The Qur'an"
+              langOrFramework1 = "HTML"
+              langOrFramework2 = "CSS"
+              projectDescription = "A static website in HTML and CSS to understand what the Holy Qur'an talks about in detail, separated by categories."
+              />
+
+              <ProjectProp
+              image = {Forex}
+              width = "100px"
+              height = "100px"
+              projectTitle = "Forex Bureau Landing Page"
+              langOrFramework1 = "HTML"
+              langOrFramework2 = "SCSS"
+              projectDescription = "A forex bureau landing page with a currency converter"
+              />
+
+              <ProjectProp
+              image = {EBookReader}
+              projectTitle = "E-Book Reader"
+              langOrFramework1 = "JavaScript"
+              langOrFramework2 = "React"
+              langOrFramework3 = "C#"
+              langOrFramework4 = "ASP.NET Core"
+              langOrFramework5 = "TailwindCSS"
+              projectDescription = "A full stack E-Book reader"
+              />
+
+              
             </div>
+            
           </div>
 
 
