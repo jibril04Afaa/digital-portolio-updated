@@ -45,7 +45,7 @@ const Skills = () => {
           </div>
 
           {/* Skills catalog(ue) */}
-          <div className="sm:grid grid-cols-2 gap-4 text-sm ml-0 mr-0 p-0 tablet:flex flex-wrap gap-4 justify-center ml-20 mr-20">
+          <div className="sm:grid grid-cols-2 text-sm ml-0 mr-0 tablet:flex flex-wrap gap-4 justify-center ml-20 mr-20">
             {/* C# */}
             <div className="border-4 rounded-xl flex flex-col items-center gap-2 w-28 p-2 bg-lightPurple">
               <TbBrandCSharp size={40} />

@@ -5,7 +5,7 @@ const HeroFooter = () => {
     <div>
       {/* Inner Container */}
       <div>
-        <div className='sm:mt-2 flex-col items-center gap-3 tablet:mt-14 flex justify-around'>
+        <div className='sm:mt-2 grid grid-cols-2 p-2 items-center gap-3 tablet:mt-14 flex justify-around'>
           {/* Years of Experience (YOE) */}
           <div className='flex gap-1'>
             {/* Number */}
