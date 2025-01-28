@@ -77,14 +77,8 @@ const Skills = () => {
             {/* TypeScript */}
             <div className="border-4 rounded-xl flex flex-col items-center gap-2 w-28 p-2 bg-lightPurple">
               <SiTypescript size={40} />
-              <p>65%</p>
+              <p>50%</p>
               <p>TypeScript</p>
-            </div>
-
-            {/* C */}
-            <div className="border-4 rounded-xl flex flex-col items-center gap-2 w-28 p-2 bg-lightPurple">
-              <p>85%</p>
-              <p>C</p>
             </div>
 
             {/* TailwindCSS */}

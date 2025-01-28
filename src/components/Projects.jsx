@@ -2,6 +2,7 @@ import EBookReader from '../img/e-book-reader.png'
 import AfricanUB from '../img/AfricanUB.png'
 import KnowTheQuran from '../img/know-the-Quran.png'
 import Forex from "../img/forex-bureau.png"
+import FahdrissFarms from "../img/ff.png"
 
 import ProjectProp from "../components/ProjectProp"
 
@@ -9,7 +10,7 @@ const Projects = () => {
   return (
     <div>
       {/* Inner Container */}
-      <div className='border-2 mt-32'>
+      <div className='mt-32'>
         <div>
           {/* Title */}
           <div className='flex justify-center items-center mt-4'>
@@ -62,9 +63,7 @@ const Projects = () => {
               <ProjectProp
               image = {EBookReader}
               projectTitle = "E-Book Reader"
-              langOrFramework1 = "JavaScript"
               langOrFramework2 = "React"
-              langOrFramework3 = "C#"
               langOrFramework4 = "ASP.NET Core"
               langOrFramework5 = "TailwindCSS"
               projectDescription = "A full stack E-Book reader built with a beautiful ReactJS frontend and TailwindCSS styling, and a secure backend with the ASP.NET Core framework on C#, using MVC architecture."
@@ -73,12 +72,10 @@ const Projects = () => {
               <ProjectProp
               image = {AfricanUB}
               projectTitle = "African Urban Dictionary"
-              langOrFramework1 = "JavaScript"
               langOrFramework2 = "React"
-              langOrFramework3 = "C#"
               langOrFramework4 = "ASP.NET Core"
               langOrFramework5 = "TailwindCSS"
-              projectDescription = "A fully responsive Urban Dictionary for African Slang terms built with ReactJS and TailwindCSS, with an ASP.NET Core backend."
+              projectDescription = "A fully responsive Urban Dictionary for African Slang terms built with ReactJS and TailwindCSS, with an ASP.NET Core backend, and a PostgreSQL database."
               />
 
               <ProjectProp
@@ -100,35 +97,18 @@ const Projects = () => {
               />
 
               <ProjectProp
-              image = {EBookReader}
-              projectTitle = "E-Book Reader"
+              image = {FahdrissFarms}
+              projectTitle = "E-Commerce Web App"
               langOrFramework1 = "JavaScript"
-              langOrFramework2 = "React"
-              langOrFramework3 = "C#"
-              langOrFramework4 = "ASP.NET Core"
-              langOrFramework5 = "TailwindCSS"
-              projectDescription = "A full stack E-Book reader"
+              langOrFramework3 = "Node"
+              langOrFramework4 = "Express"
+              langOrFramework5 = "MongoDB"
+              projectDescription = "A full stack and responsive e-commerce website selling African spices with a MongoDB database built with HTML, SCSS and Vanilla Javascript on the frontend, and Node.js and Express.js on the backend."
               />
 
               
             </div>
             
-          </div>
-
-
-
-
-
-          {/* Projects catalog */}
-          <div className='flex'>
-            {/* First Project */}
-            <div></div>
-
-            {/* Second Project */}
-            <div></div>
-
-            {/* Third Project */}
-            <div></div>
           </div>
 
         </div>

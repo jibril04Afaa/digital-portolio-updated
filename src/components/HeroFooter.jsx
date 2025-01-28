@@ -10,7 +10,7 @@ const HeroFooter = () => {
           <div className='flex gap-1'>
             {/* Number */}
             <div>
-              <p className='font-bold text-4xl'>1.5+</p>
+              <p className='font-bold text-4xl'>1+</p>
             </div>
             {/* Text */}
             <div>

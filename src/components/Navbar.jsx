@@ -15,7 +15,7 @@ const Navbar = () => {
   return (
     <>
       <Router>
-        <div className="border-2 flex justify-between items-center p-4">
+        <div className="flex justify-between items-center p-4">
           
           {/* Logo */}
           <div>
@@ -23,7 +23,7 @@ const Navbar = () => {
           </div>
 
           {/* Navigation Items */}
-          <nav className="flex gap-10 border-2 p-3 rounded-3xl cursor-pointer">
+          <nav className="flex gap-10 p-3 rounded-3xl cursor-pointer">
             <Link to="/" className="">Home</Link>
             <Link to="/about">About</Link>
             <Link to="/skills">Skills</Link>
@@ -34,7 +34,7 @@ const Navbar = () => {
           {/* Light/dark mode button */}
           <div>
             <FaMoon
-            className="border-2 rounded-full p-1 text-4xl"
+            className=" rounded-full p-1 text-4xl"
             />
           </div>
 
