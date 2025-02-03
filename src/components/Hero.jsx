@@ -57,9 +57,12 @@ const Hero = () => {
         </div>
 
         {/* Right side image */}
-        <div className="sm:flex justify-center items-center w-44 tablet:flex-none">
-          <img src={MeBrown} alt="" width="300px" height="150px" className="rounded-3xl"/>
+        <div className="sm:flex justify-center items-center pb-4">
+          <div className="w-44 tablet:flex-none">
+            <img src={MeBrown} alt="" width="300px" height="150px" className="rounded-3xl"/>
+          </div>
         </div>
+        
       </div>
     </div>
 
