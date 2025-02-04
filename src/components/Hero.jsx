@@ -8,24 +8,28 @@ import { FaGithub } from "react-icons/fa"
 const Hero = () => {
   return (
     <>
-    <div class="absolute inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]"><div class="absolute left-0 right-0 top-0 -z-10 m-auto h-[310px] w-[310px] rounded-full bg-fuchsia-400 opacity-20 blur-[100px]"></div></div>
+    <div className="absolute inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]">
+      <div className="absolute left-0 right-0 top-0 -z-10 m-auto h-[310px] w-[310px] rounded-full bg-fuchsia-400 opacity-20 blur-[100px]"></div>
+    </div>
 
-    <div className='border-2 '>
-      <div className="sm:text-sm container mx-auto px-4">
-      <div className="flex sm:flex-col-reverse tablet:flex-row justify-around mt-12">
+    <div className="container mx-auto px-6 py-8 ">
+      <div className="flex sm:flex-col-reverse tablet:flex-row justify-between items-center mt-8">
         
-        <div className="flex flex-col gap-6 p-2 sm:w-full tablet:w-auto tablet:pr-8">
+        <div className="flex flex-col gap-8 sm:w-full tablet:w-1/2">
           <div className="sm:text-center tablet:text-left">
             <p className="font-bold sm:text-xl tablet:text-2xl">I am Jibril</p>
-            <h1 className="font-bold text-4xl sm:text-2xl tablet:text-3xl">Software Engineer, Writer + <br className="hidden tablet:block" /> Computer Science Student</h1>
+            <h1 className="font-bold text-4xl sm:text-2xl tablet:text-3xl">
+              Software Engineer, Writer + <br className="hidden tablet:block" /> 
+              Computer Science Student
+            </h1>
           </div>
 
           <div className="sm:text-center tablet:text-left">
             <p className="sm:text-sm tablet:text-2xl">
-                I am a curious and determined computer science <br className="hidden tablet:block" />
-                embracing authenticity in all aspects of life. An explorer<br className="hidden tablet:block" /> 
-                through reading and driven by a passion for self-improvement,<br className="hidden tablet:block" />
-                I have leadership and tech experience, and <br className="hidden tablet:block" />
+                I am a curious and determined computer science
+                embracing authenticity in all aspects of life. An explorer
+                through reading and driven by a passion for self-improvement,
+                I have leadership and tech experience, and
                 strive to balance discipline with creativity to reach my goals.
             </p>
           </div>
@@ -48,8 +52,8 @@ const Hero = () => {
         
         </div>
 
-        <div className="sm:flex justify-center items-center pb-4 w-full tablet:w-auto tablet:pl-8">
-          <div className="sm:w-44 tablet:w-auto tablet:flex-none relative group">
+        <div className="sm:flex justify-center items-center pb-8 w-full tablet:w-1/2 tablet:flex tablet:justify-end">
+          <div className="sm:w-44 tablet:w-auto max-w-md relative group">
             <div className="absolute -inset-0.5 bg-gradient-to-r from-pink-600 via-purple-600 to-blue-600 rounded-3xl blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
             <div className="relative">
               <img 
@@ -63,8 +67,6 @@ const Hero = () => {
         
       </div>
     </div>
-    </div>
-    
 
     <div>
       <HeroFooter/>
