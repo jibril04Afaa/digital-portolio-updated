@@ -18,6 +18,30 @@ module.exports = {
         customGreen: 'rgba(87, 167, 77, 1)',
         lightPurple: '#FCEEFE',
       },
+      animation: {
+        rotate: 'rotate 10s linear infinite',
+        tilt: 'tilt 10s infinite linear',
+      },
+      keyframes: {
+        rotate: {
+          '0%': { 'clip-path': 'inset(0 0 98% 0)' },
+          '25%': { 'clip-path': 'inset(0 98% 0 0)' },
+          '50%': { 'clip-path': 'inset(98% 0 0 0)' },
+          '75%': { 'clip-path': 'inset(0 0 0 98%)' },
+          '100%': { 'clip-path': 'inset(0 0 98% 0)' },
+        },
+        tilt: {
+          '0%, 50%, 100%': {
+            transform: 'rotate(0deg)',
+          },
+          '25%': {
+            transform: 'rotate(1deg)',
+          },
+          '75%': {
+            transform: 'rotate(-1deg)',
+          },
+        },
+      },
     },
   },
   plugins: [],
