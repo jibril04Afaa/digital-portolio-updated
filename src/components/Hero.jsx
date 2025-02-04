@@ -59,9 +59,11 @@ const Hero = () => {
         {/* Right side image */}
         <div className="sm:flex justify-center items-center pb-4">
           <div className="sm:w-44 tablet:flex-none relative group">
-            <div className="absolute -inset-0.5 bg-gradient-to-r from-pink-600 to-purple-600 rounded-3xl blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
-            <img src={MeBrown} alt="" width="300px" height="150px" 
-            className="relative rounded-3xl tablet:w-[400px] tablet:h-[220px] laptop:w-[500px] laptop:h-[320px]"/>
+            <div className="absolute -inset-0.5 bg-gradient-to-r from-pink-600 via-purple-600 to-blue-600 rounded-3xl blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
+            <div className="relative">
+              <img src={MeBrown} alt="" width="300px" height="150px" 
+              className="rounded-3xl tablet:w-[400px] tablet:h-[220px] laptop:w-[500px] laptop:h-[320px]"/>
+            </div>
           </div>
         </div>
         

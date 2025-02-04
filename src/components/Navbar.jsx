@@ -15,7 +15,7 @@ const Navbar = () => {
   return (
     <>
       <Router>
-        <div className="flex sm:hidden tablet: justify-between items-center p-4">
+        <div className="sm:hidden tablet:flex justify-between items-center p-4">
           
           {/* Logo */}
           <div>

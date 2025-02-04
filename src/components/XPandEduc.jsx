@@ -16,7 +16,7 @@ const XPandEduc = () => {
                     </div>
 
                     {/* Experiences stuff */}
-                    <div className="w-full">
+                    <div className="w-full flex flex-col items-center">
                         <div className="flex items-center flex-col gap-2 w-3/4">
                         {/* Internship 1 */}
                         <div className="cursor-pointer p-4 border-2 rounded-2xl w-full sm:w-4/5 tablet:w-full">
@@ -125,30 +125,32 @@ const XPandEduc = () => {
                     </div>
 
                     {/* Education stuff */}
-                    <div className="flex items-center flex-col gap-2">
-                        {/* Education 1 */}
-                        <div className="cursor-pointer p-4 border-2 rounded-2xl w-full sm:w-4/5 tablet:w-full">
-                            {/* Timeline */}
-                            <div>
-                                <p>Expected Graduation - June 2026</p>
+                    <div className="w-full flex items-center flex-col gap-2">
+                        <div className="flex items-center flex-col gap-2 w-3/4">
+                            {/* Education 1 */}
+                            <div className="cursor-pointer p-4 border-2 rounded-2xl w-full sm:w-4/5 tablet:w-full">
+                                {/* Timeline */}
+                                <div>
+                                    <p>Expected Graduation - June 2026</p>
+                                </div>
+
+                                {/* Title */}
+                                <div>
+                                    <p className="font-bold">B.S Computer Science</p>
+                                </div>
+
+                                {/* Company */}
+                                <div>
+                                    <p>The Pennsylvania State University</p>
+                                </div>
+
+                                {/* Location */}
+                                <div>
+                                    <p>State College, PA</p>
+                                </div>
                             </div>
 
-                            {/* Title */}
-                            <div>
-                                <p className="font-bold">B.S Computer Science</p>
-                            </div>
-
-                            {/* Company */}
-                            <div>
-                                <p>The Pennsylvania State University</p>
-                            </div>
-
-                            {/* Location */}
-                            <div>
-                                <p>State College, PA</p>
-                            </div>
                         </div>
-
                     </div>
                 </div>
             </div>

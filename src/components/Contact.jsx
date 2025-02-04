@@ -12,9 +12,9 @@ const Contact = () => {
           </div>
 
           {/* Contact Body */}
-          <div className='flex flex-col sm:items-center gap-12 px-4 mt-8'>
+          <div className='flex flex-col sm:items-center gap-12 px-4 mt-8 max-w-7xl mx-auto'>
             {/* Send message */}
-            <div className='border-2 rounded-xl p-8 w-full sm:max-w-md'>
+            <div className='border-2 rounded-xl p-8 w-full sm:max-w-2xl'>
               <h2 className='text-2xl font-bold mb-4'>Send a Message</h2>
               <p className='mb-6'>Enter your details to send me an email here!</p>
               <form action="submit" className='space-y-4'>
@@ -50,7 +50,7 @@ const Contact = () => {
             </div>
 
             {/* Map */}
-            <div className='w-full sm:max-w-xl'>
+            <div className='w-full sm:max-w-2xl'>
               <iframe 
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6040.7077071928115!2d-77.86248868909183!3d40.79821733221467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89cea6247f5d0291%3A0xad3e8e9b56e48269!2sThe%20Pennsylvania%20State%20University!5e0!3m2!1sen!2sus!4v1738035405052!5m2!1sen!2sus" 
                 width="100%" 
