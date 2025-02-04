@@ -19,7 +19,7 @@ const Hero = () => {
           <div className="sm:text-center tablet:text-left">
             <p className="font-bold sm:text-xl tablet:text-2xl">I am Jibril</p>
             <h1 className="font-bold text-4xl sm:text-2xl tablet:text-3xl">
-              Software Engineer, Writer + <br className="hidden tablet:block" /> 
+              Software Engineer, Writer +  
               Computer Science Student
             </h1>
           </div>
