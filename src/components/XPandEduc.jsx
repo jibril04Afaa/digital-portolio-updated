@@ -10,7 +10,7 @@ const XPandEduc = () => {
                 {/* Experience */}
                 <div className="sm:items-center tablet:flex-col w-96 gap-4">
                     {/* Title */}
-                    <div className='flex justify-center items-center sm:mb-4'>
+                    <div className='flex justify-center items-center sm:mb-4 mt-4'>
                         <IoBriefcaseOutline className="text-4xl"/>
                         <p className='font-bold tablet:text-3xl'>My Experience</p>
                     </div>
@@ -54,7 +54,7 @@ const XPandEduc = () => {
 
                             {/* Company */}
                             <div>
-                                <p>Penn State University</p>
+                                <p>Penn State College of Engineering</p>
                             </div>
 
                             {/* Location */}
@@ -116,9 +116,9 @@ const XPandEduc = () => {
                 </div>
 
                 {/* Education */}
-                <div className="flex items-center tablet:w-80 flex-col gap-2">
+                <div className="sm:items-center tablet:flex-col w-96 gap-4">
                     {/* Title */}
-                    <div className='flex items-center sm:mt-8 mb-2'>
+                    <div className='flex justify-center items-center sm:mb-4 mt-8'>
                         <LuGraduationCap className="text-4xl"/>
                         <p className='tablet:text-3xl font-bold'>My Education</p>
                     </div>
