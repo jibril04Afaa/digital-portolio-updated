@@ -24,7 +24,7 @@ const App = () => {
           </div>
 
           {/* Navigation Items */}
-          <nav className="flex sm:hidden tablet: gap-10 border-2 p-3 rounded-3xl cursor-pointer">
+          <nav className="flex sm:hidden tablet:gap-10 border-2 p-3 rounded-3xl cursor-pointer">
             <Link to="/" className="">Home</Link>
             <Link to="/about">About</Link>
             <Link to="/skills">Skills</Link>
