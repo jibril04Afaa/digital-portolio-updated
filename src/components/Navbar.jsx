@@ -15,47 +15,43 @@ const Navbar = () => {
   return (
     <>
       <Router>
-        <div className="sm:hidden tablet:flex justify-between items-center p-4">
-          
-          {/* Logo */}
-          <div>
-            <p>JB</p>
+        {/* Hide navbar completely on mobile, show on tablet and above */}
+        <div className="hidden tablet:block">
+          <div className="flex justify-between items-center p-4">
+            
+            {/* Logo */}
+            <div>
+              <p>JB</p>
+            </div>
+
+            {/* Navigation Items */}
+            <nav className="flex gap-10 p-3 rounded-3xl cursor-pointer">
+              <Link to="/" className="">Home</Link>
+              <Link to="/about">About</Link>
+              <Link to="/skills">Skills</Link>
+              <Link to="/projects">Projects</Link>
+              <Link to="/contact">Contact</Link>
+            </nav>
+
+            {/* Light/dark mode button */}
+            <div>
+              <FaMoon className="rounded-full p-1 text-4xl"/>
+            </div>
           </div>
-
-          {/* Navigation Items */}
-          <nav className="flex sm:hidden tablet: gap-10 p-3 rounded-3xl cursor-pointer">
-            <Link to="/" className="">Home</Link>
-            <Link to="/about">About</Link>
-            <Link to="/skills">Skills</Link>
-            <Link to="/projects">Projects</Link>
-            <Link to="/contact">Contact</Link>
-          </nav>
-
-          {/* Light/dark mode button */}
-          <div>
-            <FaMoon
-            className=" rounded-full p-1 text-4xl"/>
-          </div>
-
-
         </div>
 
-
         <div>
-            <Routes>
-              <Route path="/" element={<Hero/>}/> 
-              <Route path="/about" element={<About/>}/>
-              <Route path="/skills" element={<Skills/>}/>
-              <Route path="/projects" element={<Projects/>}/>
-              <Route path="/contact" element={<Contact/>}/> 
-              <Route path="*" element={<ErrorPage/>}/> {/* Error Route */}
-            </Routes>
-          </div>
-        
+          <Routes>
+            <Route path="/" element={<Hero/>}/> 
+            <Route path="/about" element={<About/>}/>
+            <Route path="/skills" element={<Skills/>}/>
+            <Route path="/projects" element={<Projects/>}/>
+            <Route path="/contact" element={<Contact/>}/> 
+            <Route path="*" element={<ErrorPage/>}/> {/* Error Route */}
+          </Routes>
+        </div>
       </Router>
-
     </>
-
   )
 }
 

@@ -3,6 +3,7 @@ module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
+  darkMode: 'class',
   theme: {
     screens: {
       "sm": "320px",
@@ -21,6 +22,7 @@ module.exports = {
       animation: {
         rotate: 'rotate 10s linear infinite',
         tilt: 'tilt 10s infinite linear',
+        'gradient-xy': 'gradient 15s ease infinite',
       },
       keyframes: {
         rotate: {
@@ -41,6 +43,16 @@ module.exports = {
             transform: 'rotate(-1deg)',
           },
         },
+        gradient: {
+          '0%, 100%': {
+            'background-size': '400% 400%',
+            'background-position': 'left center'
+          },
+          '50%': {
+            'background-size': '200% 200%',
+            'background-position': 'right center'
+          }
+        }
       },
     },
   },
