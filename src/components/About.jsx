@@ -3,7 +3,7 @@ import React from 'react'
 const About = () => {
   return (
     <div className='mt-32 '>
-      <div className='border-2 container mx-auto px-6 py-8'>
+      <div className='container mx-auto px-6 py-8'>
         {/* Title Container */}
         <div className='flex justify-center items-center'>
           {/* Title */}

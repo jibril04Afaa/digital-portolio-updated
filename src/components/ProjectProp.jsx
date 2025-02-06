@@ -40,11 +40,29 @@ const ProjectProp = (props) => {
           <p className="text-sm text-gray-600 dark:text-gray-300 text-center">{props.projectDescription}</p>
         </div>
 
-        {/* View Project */}
-        <div className='mt-3 flex justify-center'>
-          <button className='border-2 dark:border-gray-700 px-4 py-1.5 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white transition-colors'>
+        {/* Buttons Container */}
+        <div className='mt-3 flex justify-center gap-4'>
+          {/* View Project Button */}
+          <a 
+            href={props.githubLink} 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className='border-2 dark:border-gray-700 px-4 py-1.5 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white transition-colors'
+          >
             View Project
-          </button>
+          </a>
+
+          {/* Live Demo Button - Only show if liveDemoLink exists */}
+          {props.liveDemoLink && (
+            <a 
+              href={props.liveDemoLink} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className='border-2 dark:border-gray-700 px-4 py-1.5 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white transition-colors'
+            >
+              Live Demo
+            </a>
+          )}
         </div>
       </div>
     </div>

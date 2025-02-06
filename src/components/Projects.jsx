@@ -58,19 +58,22 @@ const Projects = () => {
               <ProjectProp
                 image={EBookReader}
                 projectTitle="E-Book Reader"
-                langOrFramework2="React"
-                langOrFramework4="ASP.NET Core"
-                langOrFramework5="TailwindCSS"
-                projectDescription="A full stack E-Book reader built with a beautiful ReactJS frontend and TailwindCSS styling, and a secure backend with the ASP.NET Core framework on C#, using MVC architecture."
+                langOrFramework1="React"
+                langOrFramework2=".NET"
+                projectDescription="An audio and digital book reader written in ReactJS and .NET"
+                githubLink="https://github.com/jibril04Afaa/ebook-reader"
+                liveDemoLink="#"
               />
 
               <ProjectProp
                 image={AfricanUB}
                 projectTitle="African Urban Dictionary"
-                langOrFramework2="React"
-                langOrFramework4="ASP.NET Core"
-                langOrFramework5="TailwindCSS"
-                projectDescription="A fully responsive Urban Dictionary for African Slang terms built with ReactJS and TailwindCSS, with an ASP.NET Core backend, and a PostgreSQL database."
+                langOrFramework1="React"
+                langOrFramework2=".NET"
+                langOrFramework3="PostgreSQL"
+                projectDescription="A full stack urban dictionary for African words and phrases built with a React frontend, a .NET backend, and a PostgreSQL database"
+                githubLink="https://github.com/jibril04Afaa/african-urban-dict"
+                liveDemoLink="#"
               />
 
               <ProjectProp
@@ -79,6 +82,8 @@ const Projects = () => {
                 langOrFramework1="HTML"
                 langOrFramework2="CSS"
                 projectDescription="A static website in HTML and CSS to understand what the Holy Qur'an talks about in detail, separated by categories."
+                githubLink="https://github.com/jibril04Afaa/know-the-quran"
+                liveDemoLink="#"
               />
 
               <ProjectProp
@@ -86,9 +91,11 @@ const Projects = () => {
                 width="100px"
                 height="100px"
                 projectTitle="Forex Bureau Landing Page"
-                langOrFramework1="HTML"
+                langOrFramework1="React"
                 langOrFramework2="SCSS"
                 projectDescription="A forex bureau landing page with a currency converter"
+                githubLink="https://github.com/jibril04Afaa/maltima-fb"
+                liveDemoLink="#"
               />
 
               <ProjectProp
@@ -99,6 +106,8 @@ const Projects = () => {
                 langOrFramework4="Express"
                 langOrFramework5="MongoDB"
                 projectDescription="A full stack and responsive e-commerce website selling African spices with a MongoDB database built with HTML, SCSS and Vanilla Javascript on the frontend, and Node.js and Express.js on the backend."
+                githubLink="https://github.com/jibril04Afaa/fahdriss-farms"
+                liveDemoLink="#"
               />
             </div>
           </div>
