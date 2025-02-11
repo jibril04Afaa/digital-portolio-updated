@@ -1,5 +1,5 @@
 import EBookReader from '../img/e-book-reader.png'
-import AfricanUB from '../img/AfricanUB.png'
+import AfricanUB from '../img/AfricanUrban.png'
 import KnowTheQuran from '../img/know-the-Quran.png'
 import Forex from "../img/forex-bureau.png"
 import FahdrissFarms from "../img/ff.png"
@@ -62,7 +62,6 @@ const Projects = () => {
                 langOrFramework2=".NET"
                 projectDescription="An audio and digital book reader written in ReactJS and .NET"
                 githubLink="https://github.com/jibril04Afaa/ebook-reader"
-                liveDemoLink="#"
               />
 
               <ProjectProp
@@ -73,7 +72,6 @@ const Projects = () => {
                 langOrFramework3="PostgreSQL"
                 projectDescription="A full stack urban dictionary for African words and phrases built with a React frontend, a .NET backend, and a PostgreSQL database"
                 githubLink="https://github.com/jibril04Afaa/african-urban-dict"
-                liveDemoLink="#"
               />
 
               <ProjectProp
@@ -83,7 +81,6 @@ const Projects = () => {
                 langOrFramework2="CSS"
                 projectDescription="A static website in HTML and CSS to understand what the Holy Qur'an talks about in detail, separated by categories."
                 githubLink="https://github.com/jibril04Afaa/know-the-quran"
-                liveDemoLink="#"
               />
 
               <ProjectProp
@@ -95,7 +92,6 @@ const Projects = () => {
                 langOrFramework2="SCSS"
                 projectDescription="A forex bureau landing page with a currency converter"
                 githubLink="https://github.com/jibril04Afaa/maltima-fb"
-                liveDemoLink="#"
               />
 
               <ProjectProp
@@ -107,7 +103,6 @@ const Projects = () => {
                 langOrFramework5="MongoDB"
                 projectDescription="A full stack and responsive e-commerce website selling African spices with a MongoDB database built with HTML, SCSS and Vanilla Javascript on the frontend, and Node.js and Express.js on the backend."
                 githubLink="https://github.com/jibril04Afaa/fahdriss-farms"
-                liveDemoLink="#"
               />
             </div>
           </div>
