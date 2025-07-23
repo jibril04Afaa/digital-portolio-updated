@@ -1,9 +1,11 @@
-import { BrowserRouter as Router } from "react-router-dom"
+import { BrowserRouter as Router, useLocation } from "react-router-dom"
 import { useState, useEffect } from "react"
-import { FaMoon } from "react-icons/fa"
+import { FaMoon, FaArrowUp } from "react-icons/fa"
 import { BsSun } from "react-icons/bs"
 import { RxHamburgerMenu } from "react-icons/rx"
 import { IoMdClose } from "react-icons/io"
+import { AnimatePresence, motion } from "framer-motion"
+import { useInView } from 'react-intersection-observer';
 
 import Hero from "./components/Hero"
 import About from "./components/About"
@@ -47,21 +49,83 @@ const App = () => {
     }
   };
 
+  // Scroll to top button visibility
+  const [showScrollToTop, setShowScrollToTop] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 300) {
+        setShowScrollToTop(true);
+      } else {
+        setShowScrollToTop(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
+
   return (
     <Router>
-      <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-300">
-        <style>
-          {`
+      <AnimatePresence mode="wait">
+        <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-300 overflow-x-hidden">
+          {/* Floating Scroll to Top Button */}
+          {showScrollToTop && (
+            <motion.button
+              onClick={scrollToTop}
+              className="fixed bottom-8 right-8 z-50 p-3 bg-blue-500 text-white rounded-full shadow-lg hover:bg-blue-600 transition-colors"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 20 }}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <FaArrowUp />
+            </motion.button>
+          )
+          }
+          
+          <style jsx global>{`
             html {
               scroll-behavior: smooth;
             }
             
-            /* Optional: Add smooth scrolling for anchor links */
-            a[href^="#"] {
-              scroll-behavior: smooth;
+            ::-webkit-scrollbar {
+              width: 10px;
             }
-          `}
-        </style>
+            
+            ::-webkit-scrollbar-track {
+              background: #f1f1f1;
+            }
+            
+            ::-webkit-scrollbar-thumb {
+              background: #888;
+              border-radius: 5px;
+            }
+            
+            ::-webkit-scrollbar-thumb:hover {
+              background: #555;
+            }
+            
+            .dark ::-webkit-scrollbar-track {
+              background: #1f2937;
+            }
+            
+            .dark ::-webkit-scrollbar-thumb {
+              background: #4b5563;
+            }
+            
+            .dark ::-webkit-scrollbar-thumb:hover {
+              background: #6b7280;
+            }
+          `}</style>
         <div className="relative z-0">
           {/* Navbar container */}
           <div className="sticky top-0 z-50">
@@ -138,17 +202,70 @@ const App = () => {
             </div>
           </div>
 
-          {/* Main content sections */}
+          {/* Main content sections with scroll-triggered animations */}
           <main className="dark:text-white">
-            <section id="hero"><Hero /></section>
-            <section id="about"><About /></section>
-            <section id="skills"><Skills /></section>
-            <section id="projects"><Projects /></section>
-            <section id="xp-education"><XPandEduc /></section>
-            <section id="contact"><Contact /></section>
+            <motion.section 
+              id="hero"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.5 }}
+            >
+              <Hero />
+            </motion.section>
+            
+            <motion.section 
+              id="about"
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.6 }}
+            >
+              <About />
+            </motion.section>
+            
+            <motion.section 
+              id="skills"
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+            >
+              <Skills />
+            </motion.section>
+            
+            <motion.section 
+              id="projects"
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+            >
+              <Projects />
+            </motion.section>
+            
+            <motion.section 
+              id="xp-education"
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+            >
+              <XPandEduc />
+            </motion.section>
+            
+            <motion.section 
+              id="contact"
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.6 }}
+            >
+              <Contact />
+            </motion.section>
           </main>
         </div>
       </div>
+      </AnimatePresence>
     </Router>
   )
 }
