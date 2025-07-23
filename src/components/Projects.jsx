@@ -4,10 +4,6 @@ import { useInView } from 'react-intersection-observer';
 
 import EBookReader from '../img/e-book-reader.png';
 import AfricanUB from '../img/AfricanUrban.png';
-import KnowTheQuran from '../img/know-the-Quran.png';
-import Forex from "../img/forex-bureau.png";
-import FahdrissFarms from "../img/ff.png";
-
 import ProjectProp from "../components/ProjectProp";
 
 const Projects = () => {
@@ -88,10 +84,10 @@ const Projects = () => {
           {/* Projects Grid */}
           <motion.div 
             variants={containerVariants}
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4 mt-8"
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 px-4 mt-8 justify-center"
           >
             <AnimatePresence>
-              {/* Project 1 */}
+              {/* Project 1 - E-Book Reader */}
               <motion.div
                 variants={itemVariants}
                 whileHover={{ y: -5, boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)' }}
@@ -108,7 +104,7 @@ const Projects = () => {
                 />
               </motion.div>
 
-              {/* Project 2 */}
+              {/* Project 2 - African Urban Dictionary */}
               <motion.div
                 variants={itemVariants}
                 whileHover={{ y: -5, boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)' }}
@@ -118,64 +114,10 @@ const Projects = () => {
                   image={AfricanUB}
                   projectTitle="African Urban Dictionary"
                   langOrFramework1="React"
-                  langOrFramework2=".NET"
+                  langOrFramework2="Springboot"
                   langOrFramework3="PostgreSQL"
-                  projectDescription="A full stack urban dictionary for African words and phrases built with a React frontend, a .NET backend, and a PostgreSQL database"
+                  projectDescription="A full stack urban dictionary for African words and phrases built with a React frontend, a Springboot backend, and a PostgreSQL database"
                   githubLink="https://github.com/jibril04Afaa/african-urban-dict"
-                  demoLink="#"
-                />
-              </motion.div>
-
-              {/* Project 3 */}
-              <motion.div
-                variants={itemVariants}
-                whileHover={{ y: -5, boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)' }}
-                className="relative overflow-hidden rounded-2xl bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 transition-all duration-300"
-              >
-                <ProjectProp
-                  image={KnowTheQuran}
-                  projectTitle="Know The Qur'an"
-                  langOrFramework1="HTML"
-                  langOrFramework2="CSS"
-                  projectDescription="A static website in HTML and CSS to understand what the Holy Qur'an talks about in detail, separated by categories."
-                  githubLink="https://github.com/jibril04Afaa/know-the-quran"
-                  demoLink="#"
-                />
-              </motion.div>
-
-              {/* Project 4 */}
-              <motion.div
-                variants={itemVariants}
-                whileHover={{ y: -5, boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)' }}
-                className="relative overflow-hidden rounded-2xl bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 transition-all duration-300"
-              >
-                <ProjectProp
-                  image={Forex}
-                  projectTitle="Forex Bureau Landing Page"
-                  langOrFramework1="React"
-                  langOrFramework2="SCSS"
-                  projectDescription="A forex bureau landing page with a currency converter"
-                  githubLink="https://github.com/jibril04Afaa/maltima-fb"
-                  demoLink="#"
-                />
-              </motion.div>
-
-              {/* Project 5 */}
-              <motion.div
-                variants={itemVariants}
-                whileHover={{ y: -5, boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)' }}
-                className="relative overflow-hidden rounded-2xl bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 transition-all duration-300"
-              >
-                <ProjectProp
-                  image={FahdrissFarms}
-                  projectTitle="E-Commerce Web App"
-                  langOrFramework1="JavaScript"
-                  langOrFramework2="HTML"
-                  langOrFramework3="Node"
-                  langOrFramework4="Express"
-                  langOrFramework5="MongoDB"
-                  projectDescription="An e-commerce web app for Fahdriss Farms"
-                  githubLink="https://github.com/jibril04Afaa/fahdriss-farms"
                   demoLink="#"
                 />
               </motion.div>
