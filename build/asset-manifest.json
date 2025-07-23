@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.234d4181.css",
-    "main.js": "/static/js/main.8872cc2d.js",
+    "main.css": "/static/css/main.8a39b576.css",
+    "main.js": "/static/js/main.a8e2025c.js",
     "static/js/453.98c93442.chunk.js": "/static/js/453.98c93442.chunk.js",
     "static/media/e-book-reader.png": "/static/media/e-book-reader.ac0d47eb144d8785803d.png",
     "static/media/ff.png": "/static/media/ff.af486d38bcb0bcae9aff.png",
-    "static/media/AfricanUB.png": "/static/media/AfricanUB.1b2614a16cba6dd46065.png",
     "static/media/know-the-Quran.png": "/static/media/know-the-Quran.2418b642b5b1b64bdbbf.png",
     "static/media/me-brown-shirt.jpg": "/static/media/me-brown-shirt.e1c1e81d13d9430217b8.jpg",
+    "static/media/AfricanUrban.png": "/static/media/AfricanUrban.57a3dcd5798baf64cca8.png",
     "static/media/forex-bureau.png": "/static/media/forex-bureau.df07c5fd0b42719e2f8b.png",
     "index.html": "/index.html",
-    "main.234d4181.css.map": "/static/css/main.234d4181.css.map",
-    "main.8872cc2d.js.map": "/static/js/main.8872cc2d.js.map",
+    "main.8a39b576.css.map": "/static/css/main.8a39b576.css.map",
+    "main.a8e2025c.js.map": "/static/js/main.a8e2025c.js.map",
     "453.98c93442.chunk.js.map": "/static/js/453.98c93442.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.234d4181.css",
-    "static/js/main.8872cc2d.js"
+    "static/css/main.8a39b576.css",
+    "static/js/main.a8e2025c.js"
   ]
 }
