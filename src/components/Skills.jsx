@@ -1,19 +1,20 @@
 import { motion } from "framer-motion";
 import { useInView } from 'react-intersection-observer';
 import { FaJava } from "react-icons/fa"; // Java
-import { FaReact } from "react-icons/fa"; // React
 import { TbBrandCSharp } from "react-icons/tb"; // C#
 import { FaPython } from "react-icons/fa"; // Python
-import { AiOutlineDotNet } from "react-icons/ai"; // .NET
 import { RiJavascriptFill } from "react-icons/ri"; // JavaScript
-import { FaNode } from "react-icons/fa"; // Node.js
-import { BiLogoPostgresql } from "react-icons/bi"; // PostgreSQL
-import { FaSass } from "react-icons/fa"; // SASS/SCSS
-import { RiTailwindCssFill } from "react-icons/ri"; // Tailwind CSS
-import { FaLinux } from "react-icons/fa"; // Linux
 import { SiTypescript } from "react-icons/si"; // TypeScript
+import { FaReact } from "react-icons/fa"; // React
+import { AiOutlineDotNet } from "react-icons/ai"; // .NET
+import { FaNode } from "react-icons/fa"; // Node.js
 import { SiExpress } from "react-icons/si"; // Express.js
-
+import { SiSpring } from "react-icons/si"; // Spring
+import { BiLogoPostgresql } from "react-icons/bi"; // PostgreSQL
+import { SiTailwindcss } from "react-icons/si"; // Tailwind CSS
+import { FaSass } from "react-icons/fa"; // SASS/SCSS
+import { FaLinux } from "react-icons/fa"; // Linux
+import { FaGithub } from "react-icons/fa"; // GitHub
 
 import { useState } from 'react';
 
@@ -67,19 +68,103 @@ const Skills = () => {
   });
 
   const skills = [
-    { icon: <TbBrandCSharp size={40} />, name: 'C#', level: 75, category: 'languages' },
-    { icon: <FaJava size={40} />, name: 'Java', level: 60, category: 'languages' },
-    { icon: <FaPython size={40} />, name: 'Python', level: 80, category: 'languages' },
-    { icon: <RiJavascriptFill size={40} />, name: 'JavaScript', level: 70, category: 'languages' },
-    { icon: <SiTypescript size={40} />, name: 'TypeScript', level: 65, category: 'languages' },
-    { icon: <FaReact size={40} />, name: 'React', level: 75, category: 'frameworks' },
-    { icon: <AiOutlineDotNet size={40} />, name: '.NET', level: 70, category: 'frameworks' },
-    { icon: <FaNode size={40} />, name: 'Node.js', level: 65, category: 'frameworks' },
-    { icon: <SiExpress size={30} />, name: 'Express', level: 60, category: 'frameworks' },
-    { icon: <RiTailwindCssFill size={40} />, name: 'TailwindCSS', level: 80, category: 'styling' },
-    { icon: <FaSass size={40} />, name: 'SASS/SCSS', level: 75, category: 'styling' },
-    { icon: <BiLogoPostgresql size={40} />, name: 'PostgreSQL', level: 70, category: 'databases' },
-    { icon: <FaLinux size={40} />, name: 'Linux', level: 65, category: 'tools' },
+    // Languages
+    { 
+      icon: <FaJava className="text-red-600 text-4xl" />, 
+      name: 'Java', 
+      level: 85, 
+      category: 'languages' 
+    },
+    { 
+      icon: <TbBrandCSharp className="text-purple-600 text-4xl" />, 
+      name: 'C#', 
+      level: 75, 
+      category: 'languages' 
+    },
+    { 
+      icon: <FaPython className="text-blue-600 text-4xl" />, 
+      name: 'Python', 
+      level: 80, 
+      category: 'languages' 
+    },
+    { 
+      icon: <RiJavascriptFill className="text-yellow-500 text-4xl" />, 
+      name: 'JavaScript', 
+      level: 80, 
+      category: 'languages' 
+    },
+    { 
+      icon: <SiTypescript className="text-blue-500 text-4xl" />, 
+      name: 'TypeScript', 
+      level: 75, 
+      category: 'languages' 
+    },
+    
+    // Frameworks
+    { 
+      icon: <FaReact className="text-blue-400 text-4xl" />, 
+      name: 'React', 
+      level: 80, 
+      category: 'frameworks' 
+    },
+    { 
+      icon: <SiSpring className="text-green-600 text-4xl" />, 
+      name: 'Spring Framework', 
+      level: 80, 
+      category: 'frameworks'
+    },
+    { 
+      icon: <AiOutlineDotNet className="text-purple-600 text-4xl" />, 
+      name: '.NET', 
+      level: 75, 
+      category: 'frameworks' 
+    },
+    { 
+      icon: <FaNode className="text-green-600 text-4xl" />, 
+      name: 'Node.js', 
+      level: 80, 
+      category: 'frameworks' 
+    },
+    { 
+      icon: <SiExpress className="text-gray-800 dark:text-gray-200 text-4xl" />, 
+      name: 'Express', 
+      level: 75, 
+      category: 'frameworks' 
+    },
+    { 
+      icon: <SiTailwindcss className="text-cyan-500 text-4xl" />, 
+      name: 'TailwindCSS', 
+      level: 85, 
+      category: 'frameworks' 
+    },
+    { 
+      icon: <FaSass className="text-pink-500 text-4xl" />, 
+      name: 'SASS/SCSS', 
+      level: 75, 
+      category: 'frameworks' 
+    },
+    
+    // Databases
+    { 
+      icon: <BiLogoPostgresql className="text-blue-700 text-4xl" />, 
+      name: 'PostgreSQL', 
+      level: 75, 
+      category: 'databases' 
+    },
+    
+    // Tools
+    { 
+      icon: <FaLinux className="text-yellow-600 text-4xl" />, 
+      name: 'Linux', 
+      level: 70, 
+      category: 'tools' 
+    },
+    { 
+      icon: <FaGithub className="text-gray-800 dark:text-gray-200 text-4xl" />, 
+      name: 'Git/GitHub', 
+      level: 80, 
+      category: 'tools' 
+    },
   ];
 
   const [activeCategory, setActiveCategory] = useState('all');
@@ -92,7 +177,6 @@ const Skills = () => {
     { id: 'all', name: 'All' },
     { id: 'languages', name: 'Languages' },
     { id: 'frameworks', name: 'Frameworks' },
-    { id: 'styling', name: 'Styling' },
     { id: 'databases', name: 'Databases' },
     { id: 'tools', name: 'Tools' },
   ];
@@ -224,7 +308,7 @@ const Skills = () => {
               And more...
             </h3>
             <div className="flex flex-wrap justify-center gap-2 max-w-2xl mx-auto">
-              {['Git', 'Docker', 'AWS', 'REST APIs', 'GraphQL', 'MongoDB', 'Firebase', 'Figma', 'Agile/Scrum', 'Jira'].map((skill, i) => (
+              {['Git', 'AWS', 'Firebase', 'Firebase'].map((skill, i) => (
                 <motion.span
                   key={i}
                   className="px-3 py-1.5 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 text-sm rounded-full"

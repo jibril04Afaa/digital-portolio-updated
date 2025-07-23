@@ -4,7 +4,8 @@ import { useInView } from 'react-intersection-observer';
 
 import EBookReader from '../img/e-book-reader.png';
 import AfricanUB from '../img/AfricanUrban.png';
-import ProjectProp from "../components/ProjectProp";
+import HealthApp from '../img/research-mobile-app.jpg';
+import ProjectProp from "./ProjectProp";
 
 const Projects = () => {
   const [activeFilter, setActiveFilter] = useState('All');
@@ -84,7 +85,7 @@ const Projects = () => {
           {/* Projects Grid */}
           <motion.div 
             variants={containerVariants}
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 px-4 mt-8 justify-center"
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4 mt-8 justify-center"
           >
             <AnimatePresence>
               {/* Project 1 - E-Book Reader */}
@@ -118,6 +119,23 @@ const Projects = () => {
                   langOrFramework3="PostgreSQL"
                   projectDescription="A full stack urban dictionary for African words and phrases built with a React frontend, a Springboot backend, and a PostgreSQL database"
                   githubLink="https://github.com/jibril04Afaa/african-urban-dict"
+                  demoLink="#"
+                />
+              </motion.div>
+
+              {/* Project 3 - Health Mobile App */}
+              <motion.div
+                variants={itemVariants}
+                whileHover={{ y: -5, boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)' }}
+                className="relative overflow-hidden rounded-2xl bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 transition-all duration-300"
+              >
+                <ProjectProp
+                  image={HealthApp}
+                  projectTitle="Health Mobile App"
+                  langOrFramework1="React Native"
+                  langOrFramework2="Node.js"
+                  projectDescription="A mobile application for health tracking and monitoring, built with React Native and Node.js"
+                  githubLink="#"
                   demoLink="#"
                 />
               </motion.div>

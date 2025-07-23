@@ -80,7 +80,7 @@ const XPandEduc = () => {
       timeline: 'Expected Graduation - June 2026',
       location: 'State College, PA',
       description: 'Focus on Software Engineering and Artificial Intelligence',
-      courses: ['Data Structures', 'Algorithms', 'Web Development', 'Machine Learning']
+      courses: ['Deep Learning Algorithms', 'Operating Systems', 'Numerical Computations']
     }
   ];
 

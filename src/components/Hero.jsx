@@ -5,6 +5,7 @@ import HeroFooter from "./HeroFooter";
 import { CiLinkedin } from "react-icons/ci";
 import { FaGithub } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
+import { FaArrowDown } from "react-icons/fa";
 
 const Hero = () => {
   const [ref, inView] = useInView({
@@ -76,148 +77,89 @@ const Hero = () => {
           animate={inView ? "show" : "hidden"}
         >
         
-          <motion.div className="sm:text-center tablet:text-left" variants={item}>
+          <motion.div className="sm:text-center tablet:text-left pl-4 sm:pl-6 md:pl-8 lg:pl-12" variants={item}>
             <motion.p 
-              className="font-bold sm:text-xl tablet:text-2xl"
+              className="font-bold text-xl sm:text-2xl md:text-3xl text-gray-800 dark:text-gray-200"
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5 }}
             >
-              I am Jibril
+              Hi, I'm Jibril
             </motion.p>
             <motion.h1 
-              className="font-bold text-4xl sm:text-2xl tablet:text-3xl bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500"
+              className="font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 mt-2 sm:mt-3 md:mt-4"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              Software Engineer, Writer +  
-              <br />Computer Science Student
+              Software Engineer
+              <span className="block sm:inline-block mt-2 sm:mt-0">
+                & Computer Science Student
+              </span>
             </motion.h1>
           </motion.div>
 
           <motion.div 
-            className="sm:text-center tablet:text-left"
+            className="sm:text-center tablet:text-left pl-4 sm:pl-6 md:pl-8 lg:pl-12 mt-4 sm:mt-6"
             variants={item}
           >
-            <p className="sm:text-sm tablet:text-2xl">
-              I am a curious and determined computer science student
-              embracing authenticity in all aspects of life. An explorer
-              through reading and driven by a passion for self-improvement,
-              I have leadership and tech experience, and
-              strive to balance discipline with creativity to reach my goals.
+            <p className="text-gray-600 dark:text-gray-300 text-base sm:text-lg max-w-2xl">
+              I build exceptional digital experiences with modern technologies. Currently working as a SWE Intern at Alli Marketplace, specializing in backend development with TypeScript and Node.js.
             </p>
-          </motion.div>
-
-          <motion.div 
-            className="flex items-center gap-4 sm:justify-center tablet:justify-start"
-            variants={item}
-          >
-            <motion.div
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <a 
-                href="/Jibril-Afaa.pdf" 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group relative inline-flex items-center overflow-hidden rounded-full border-2 border-blue-500 px-6 py-3 text-lg font-medium text-blue-500 shadow-lg transition-all duration-300 hover:bg-blue-500 hover:text-white"
+            <div className="mt-6 flex flex-wrap gap-4 sm:gap-6">
+              <motion.a
+                href="/resume.pdf"
+                download
+                className="px-6 py-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-lg font-medium hover:opacity-90 transition-opacity flex items-center gap-2"
+                whileHover={{ scale: 1.03 }}
+                whileTap={{ scale: 0.98 }}
               >
-                <span className="absolute right-0 flex h-10 w-10 translate-x-full transform items-center justify-center bg-blue-500 text-white duration-300 group-hover:-translate-x-2">
-                  <FaArrowRight className="h-5 w-5" />
-                </span>
-                <span className="transform transition-all duration-300 group-hover:-translate-x-3">
-                  Download Resume
-                </span>
-              </a>
-            </motion.div>
-
-            <motion.div 
-              className="flex gap-4"
-              variants={container}
-            >
-              <motion.div
-                whileHover={{ y: -3, scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-                variants={item}
-              >
-                <a 
-                  href="https://www.linkedin.com/in/jibrilafaa/" 
-                  target="_blank" 
+                Download Resume
+                <FaArrowDown className="inline" />
+              </motion.a>
+              <div className="flex gap-4 mt-2 sm:mt-0">
+                <motion.a
+                  href="https://www.linkedin.com/in/your-linkedin"
+                  target="_blank"
                   rel="noopener noreferrer"
-                  className="text-3xl text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 transition-colors"
+                  className="text-2xl text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 transition-colors"
+                  whileHover={{ y: -3, scale: 1.1 }}
+                  whileTap={{ scale: 0.95 }}
                 >
-                  <CiLinkedin className="text-4xl"/>
-                </a>
-              </motion.div>
-
-              <motion.div
-                whileHover={{ y: -3, scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-                variants={item}
-              >
-                <a 
-                  href="https://github.com/jibril04Afaa" 
-                  target="_blank" 
+                  <CiLinkedin />
+                </motion.a>
+                <motion.a
+                  href="https://github.com/your-github"
+                  target="_blank"
                   rel="noopener noreferrer"
-                  className="text-3xl text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition-colors"
+                  className="text-2xl text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition-colors"
+                  whileHover={{ y: -3, scale: 1.1 }}
+                  whileTap={{ scale: 0.95 }}
                 >
-                  <FaGithub className="text-4xl"/>
-                </a>
-              </motion.div>
-            </motion.div>
+                  <FaGithub />
+                </motion.a>
+              </div>
+            </div>
           </motion.div>
         
         </motion.div>
 
         <motion.div 
-          className="sm:flex justify-center items-center pb-8 w-full tablet:w-1/2 tablet:flex tablet:justify-end"
-          initial={{ opacity: 0, x: 50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
+          className="mt-12 sm:mt-16 md:mt-0 flex justify-center tablet:justify-end w-full tablet:w-1/2"
+          variants={item}
         >
-          <motion.div 
-            className="relative mx-auto"
-            whileHover={{ scale: 1.02 }}
-            transition={{ type: 'spring', stiffness: 300 }}
+          <motion.div
+            className="relative w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 lg:w-96 lg:h-96"
+            variants={imageVariants}
+            initial="hidden"
+            animate="visible"
+            whileHover="hover"
           >
-            {/* Image container */}
-            <motion.div 
-              className="relative"
-              variants={imageVariants}
-              initial="hidden"
-              animate="visible"
-              whileHover="hover"
-            >
-              {/* Animated gradient border */}
-              <motion.div 
-                className="absolute -inset-0.5 rounded-3xl blur-sm"
-                animate={{
-                  background: [
-                    'linear-gradient(45deg, #3b82f6, #8b5cf6, #ec4899, #3b82f6)',
-                    'linear-gradient(45deg, #8b5cf6, #ec4899, #3b82f6, #8b5cf6)',
-                    'linear-gradient(45deg, #ec4899, #3b82f6, #8b5cf6, #ec4899)',
-                    'linear-gradient(45deg, #3b82f6, #8b5cf6, #ec4899, #3b82f6)',
-                  ],
-                  backgroundSize: '300% 300%',
-                }}
-                transition={{
-                  duration: 8,
-                  repeat: Infinity,
-                  ease: 'linear',
-                }}
-              />
-              {/* Image */}
-              <div className="relative bg-white rounded-3xl overflow-hidden">
-                <motion.img 
-                  src={MeBrown} 
-                  alt="Profile picture"
-                  className="rounded-3xl w-[300px] sm:w-[250px] shadow-lg"
-                  whileHover={{ scale: 1.03 }}
-                  transition={{ duration: 0.3 }}
-                />
-              </div>
-            </motion.div>
+            <img 
+              src={MeBrown} 
+              alt="Jibril" 
+              className="h-full w-full object-cover object-top rounded-2xl shadow-xl"
+            />
           </motion.div>
         </motion.div>
         

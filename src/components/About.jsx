@@ -60,35 +60,46 @@ const About = () => {
             variants={itemVariants}
             className='text-lg leading-relaxed text-gray-700 dark:text-gray-300'
           >
-            I am currently a 
-            <span className={`${gradientText} transition-all duration-300 hover:bg-clip-border hover:border-b-2 hover:border-transparent hover:bg-gradient-to-r hover:from-red-500 hover:via-purple-500 hover:to-blue-500`}>
-              Web Developer Intern
-            </span>
-            {' '}at a startup called Alli Marketplace where I work on the frontend and backend of their 
-            website with ReactJS, TailwindCSS, and NodeJS.
+            I'm currently a <span className={gradientText}>senior Computer Science student</span> at Penn State University, 
+            specializing in Software Engineering and Artificial Intelligence. I'm passionate about building efficient, 
+            scalable applications that solve real-world problems.
           </motion.p>
 
           <motion.p 
             variants={itemVariants}
             className='text-lg leading-relaxed text-gray-700 dark:text-gray-300'
           >
-            At the same time, I am undergoing research in the{' '}
-            <span className={`${gradientText} transition-all duration-300 hover:bg-clip-border hover:border-b-2 hover:border-transparent hover:bg-gradient-to-r hover:from-red-500 hover:via-purple-500 hover:to-blue-500`}>
-              Penn State College of Engineering
-            </span>
-            {' '}where I am working with other students to build a mobile application with React Native that uses NLP 
-            to process data entries and create insightful data visualizations.
+            As a <span className={gradientText}>Software Engineer Intern</span> at{' '}
+            <a 
+              href="https://alli.market" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-purple-600 dark:text-purple-400 hover:underline"
+            >
+              Alli Marketplace
+            </a>, I work on the backend infrastructure using TypeScript and Node.js. 
+            My contributions include developing RESTful APIs, optimizing database queries, and implementing 
+            authentication systems to enhance platform security and performance.
           </motion.p>
 
           <motion.p 
             variants={itemVariants}
             className='text-lg leading-relaxed text-gray-700 dark:text-gray-300'
           >
-            I also serve as a{' '}
-            <span className={`${gradientText} transition-all duration-300 hover:bg-clip-border hover:border-b-2 hover:border-transparent hover:bg-gradient-to-r hover:from-red-500 hover:via-purple-500 hover:to-blue-500`}>
-              Resident Assistant
-            </span>
-            {' '}at Penn State, where I help foster a supportive and engaging community for students in university housing.
+            I'm also conducting research at the{' '}
+            <span className={gradientText}>Penn State College of Engineering</span>, where I'm leading 
+            the development of a mobile health application using React Native. This project involves implementing 
+            real-time health monitoring, data visualization, and secure user authentication to improve 
+            patient care through technology.
+          </motion.p>
+
+          <motion.p 
+            variants={itemVariants}
+            className='text-lg leading-relaxed text-gray-700 dark:text-gray-300'
+          >
+            When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, 
+            or mentoring fellow students in computer science. I'm always excited about opportunities to collaborate 
+            on innovative projects that make a positive impact.
           </motion.p>
 
           {/* Writing Section */}
