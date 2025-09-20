@@ -1,18 +1,17 @@
 import { motion } from "framer-motion";
 import { useInView } from 'react-intersection-observer';
-import { FaJava } from "react-icons/fa"; // Java
-import { FaReact } from "react-icons/fa"; // React
-import { TbBrandCSharp } from "react-icons/tb"; // C#
 import { FaPython } from "react-icons/fa"; // Python
-import { AiOutlineDotNet } from "react-icons/ai"; // .NET
 import { RiJavascriptFill } from "react-icons/ri"; // JavaScript
-import { FaNode } from "react-icons/fa"; // Node.js
-import { BiLogoPostgresql } from "react-icons/bi"; // PostgreSQL
-import { FaSass } from "react-icons/fa"; // SASS/SCSS
-import { RiTailwindCssFill } from "react-icons/ri"; // Tailwind CSS
 import { FaLinux } from "react-icons/fa"; // Linux
 import { SiTypescript } from "react-icons/si"; // TypeScript
-import { SiExpress } from "react-icons/si"; // Express.js
+import { SiCplusplus } from "react-icons/si"; // C++
+import { SiC } from "react-icons/si"; // C
+import { SiRos } from "react-icons/si"; // ROS2
+import { SiNvidia } from "react-icons/si"; // CUDA & TensorRT
+import { SiPytorch } from "react-icons/si"; // PyTorch
+import { SiRaspberrypi } from "react-icons/si"; // Raspberry Pi
+import { FaMicrochip } from "react-icons/fa"; // Microchip/Embedded
+import { FaRobot } from "react-icons/fa"; // Robot
 
 
 import { useState } from 'react';
@@ -67,19 +66,19 @@ const Skills = () => {
   });
 
   const skills = [
-    { icon: <TbBrandCSharp size={40} />, name: 'C#', level: 75, category: 'languages' },
-    { icon: <FaJava size={40} />, name: 'Java', level: 60, category: 'languages' },
-    { icon: <FaPython size={40} />, name: 'Python', level: 80, category: 'languages' },
+    { icon: <SiCplusplus size={40} />, name: 'C++', level: 85, category: 'languages' },
+    { icon: <FaPython size={40} />, name: 'Python', level: 90, category: 'languages' },
+    { icon: <SiC size={40} />, name: 'C', level: 75, category: 'languages' },
     { icon: <RiJavascriptFill size={40} />, name: 'JavaScript', level: 70, category: 'languages' },
     { icon: <SiTypescript size={40} />, name: 'TypeScript', level: 65, category: 'languages' },
-    { icon: <FaReact size={40} />, name: 'React', level: 75, category: 'frameworks' },
-    { icon: <AiOutlineDotNet size={40} />, name: '.NET', level: 70, category: 'frameworks' },
-    { icon: <FaNode size={40} />, name: 'Node.js', level: 65, category: 'frameworks' },
-    { icon: <SiExpress size={30} />, name: 'Express', level: 60, category: 'frameworks' },
-    { icon: <RiTailwindCssFill size={40} />, name: 'TailwindCSS', level: 80, category: 'styling' },
-    { icon: <FaSass size={40} />, name: 'SASS/SCSS', level: 75, category: 'styling' },
-    { icon: <BiLogoPostgresql size={40} />, name: 'PostgreSQL', level: 70, category: 'databases' },
-    { icon: <FaLinux size={40} />, name: 'Linux', level: 65, category: 'tools' },
+    { icon: <SiRos size={40} />, name: 'ROS2', level: 80, category: 'frameworks' },
+    { icon: <SiNvidia size={40} />, name: 'CUDA', level: 60, category: 'frameworks' },
+    { icon: <SiPytorch size={40} />, name: 'PyTorch', level: 75, category: 'frameworks' },
+    { icon: <SiNvidia size={40} />, name: 'TensorRT', level: 55, category: 'frameworks' },
+    { icon: <FaMicrochip size={40} />, name: 'Jetson', level: 70, category: 'hardware' },
+    { icon: <SiRaspberrypi size={40} />, name: 'Raspberry Pi', level: 80, category: 'hardware' },
+    { icon: <FaRobot size={40} />, name: 'Computer Vision', level: 75, category: 'concepts' },
+    { icon: <FaLinux size={40} />, name: 'Linux', level: 85, category: 'tools' },
   ];
 
   const [activeCategory, setActiveCategory] = useState('all');
@@ -90,17 +89,17 @@ const Skills = () => {
     
   const categories = [
     { id: 'all', name: 'All' },
-    { id: 'languages', name: 'Languages' },
-    { id: 'frameworks', name: 'Frameworks' },
-    { id: 'styling', name: 'Styling' },
-    { id: 'databases', name: 'Databases' },
+    { id: 'languages', name: 'Programming' },
+    { id: 'frameworks', name: 'AI/ML Tools' },
+    { id: 'hardware', name: 'Hardware' },
+    { id: 'concepts', name: 'Concepts' },
     { id: 'tools', name: 'Tools' },
   ];
   return (
     <div className="mt-32 relative" id="skills">
-      <div className="fixed inset-0 -z-10 h-full w-full bg-white dark:bg-gray-900 bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]">
+      <div className="fixed inset-0 -z-10 h-full w-full bg-[#0a0a0a] bg-[linear-gradient(to_right,#00f6ff08_1px,transparent_1px),linear-gradient(to_bottom,#00f6ff08_1px,transparent_1px)] bg-[size:20px_20px]">
         <motion.div 
-          className="fixed left-0 right-0 top-0 -z-10 m-auto h-[310px] w-[310px] rounded-full bg-gradient-to-r from-fuchsia-400 via-blue-400 to-purple-500 opacity-20 blur-[100px]"
+          className="fixed left-0 right-0 top-0 -z-10 m-auto h-[400px] w-[400px] rounded-full bg-gradient-to-r from-[#00f6ff] via-[#9d4edd] to-[#00f6ff] opacity-10 blur-[120px]"
           animate={{
             scale: [1, 1.1, 1],
             opacity: [0.2, 0.3, 0.2],
@@ -124,15 +123,15 @@ const Skills = () => {
           {/* Title */}
           <div className="flex flex-col items-center mb-12">
             <motion.h2 
-              className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-600 mb-4"
+              className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#00f6ff] to-[#9d4edd] mb-4 font-mono tracking-wider"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
             >
-              My Skills
+              [SKILLS_MATRIX]
             </motion.h2>
             <motion.div 
-              className="h-1 w-20 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full"
+              className="h-1 w-20 bg-gradient-to-r from-[#00f6ff] to-[#9d4edd] rounded-full"
               initial={{ scaleX: 0 }}
               whileInView={{ scaleX: 1 }}
               viewport={{ once: true }}
@@ -151,10 +150,10 @@ const Skills = () => {
               <motion.button
                 key={category.id}
                 onClick={() => setActiveCategory(category.id)}
-                className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
+                className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 font-mono ${
                   activeCategory === category.id
-                    ? 'bg-gradient-to-r from-blue-500 to-purple-600 text-white shadow-lg'
-                    : 'bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 border border-gray-200 dark:border-gray-700'
+                    ? 'bg-gradient-to-r from-[#00f6ff] to-[#9d4edd] text-[#0a0a0a] shadow-lg hover:shadow-[0_0_15px_rgba(0,246,255,0.5)]'
+                    : 'bg-[#121212] text-gray-300 hover:bg-[#00f6ff]/10 hover:text-[#00f6ff] border border-[#00f6ff]/30'
                 }`}
                 whileHover={{ y: -2, scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -181,33 +180,33 @@ const Skills = () => {
                 whileHover="hover"
               >
                 <motion.div 
-                  className="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-md h-full flex flex-col items-center justify-center text-center cursor-default"
+                  className="bg-[#121212] rounded-2xl p-6 shadow-md h-full flex flex-col items-center justify-center text-center cursor-default border border-[#00f6ff]/20 hover:border-[#00f6ff]/50 transition-all duration-300 hover:shadow-[0_0_20px_rgba(0,246,255,0.2)]"
                   variants={item}
                 >
-                  <div className="text-4xl mb-3 text-blue-500 dark:text-blue-400">
+                  <div className="text-4xl mb-3 text-[#00f6ff] hover:text-[#9d4edd] transition-colors">
                     {skill.icon}
                   </div>
-                  <h3 className="font-semibold text-gray-800 dark:text-white mb-2">
+                  <h3 className="font-semibold text-white mb-2 font-mono">
                     {skill.name}
                   </h3>
                   
                   {/* Animated Progress Bar */}
-                  <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5 mt-3">
+                  <div className="w-full bg-[#0a0a0a] rounded-full h-2.5 mt-3 border border-[#00f6ff]/30">
                     <motion.div 
-                      className="h-full bg-gradient-to-r from-blue-500 to-purple-600 rounded-full"
+                      className="h-full bg-gradient-to-r from-[#00f6ff] to-[#9d4edd] rounded-full"
                       variants={progressBar(skill.level)}
                       initial="hidden"
                       animate="show"
                     />
                   </div>
                   
-                  <span className="text-xs text-gray-500 dark:text-gray-400 mt-2">
+                  <span className="text-xs text-[#00f6ff] mt-2 font-mono">
                     {skill.level}%
                   </span>
                 </motion.div>
                 
                 {/* Hover Effect */}
-                <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-blue-500/10 to-purple-600/10 opacity-0 group-hover:opacity-100 transition-opacity -z-10" />
+                <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-[#00f6ff]/10 to-[#9d4edd]/10 opacity-0 group-hover:opacity-100 transition-opacity -z-10" />
               </motion.div>
             ))}
           </motion.div>
@@ -220,14 +219,14 @@ const Skills = () => {
             viewport={{ once: true }}
             transition={{ delay: 0.4 }}
           >
-            <h3 className="text-xl font-semibold text-gray-700 dark:text-gray-300 mb-4">
-              And more...
+            <h3 className="text-xl font-semibold text-white mb-4 font-mono">
+              [ADDITIONAL_MODULES]
             </h3>
             <div className="flex flex-wrap justify-center gap-2 max-w-2xl mx-auto">
-              {['Git', 'Docker', 'AWS', 'REST APIs', 'GraphQL', 'MongoDB', 'Firebase', 'Figma', 'Agile/Scrum', 'Jira'].map((skill, i) => (
+              {['Git', 'CMake', 'OpenCV', 'YOLOv8', 'Real-Time Systems', 'Parallel Computing', 'Embedded AI', 'Edge Computing', 'GPU Programming', 'Machine Learning'].map((skill, i) => (
                 <motion.span
                   key={i}
-                  className="px-3 py-1.5 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 text-sm rounded-full"
+                  className="px-3 py-1.5 bg-[#121212] text-[#00f6ff] text-sm rounded-lg border border-[#00f6ff]/30 hover:border-[#00f6ff]/60 hover:bg-[#00f6ff]/10 transition-all duration-300 font-mono"
                   initial={{ opacity: 0, scale: 0.8 }}
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}

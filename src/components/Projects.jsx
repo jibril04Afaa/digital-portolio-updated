@@ -17,7 +17,7 @@ const Projects = () => {
     threshold: 0.1
   });
 
-  const projectFilters = ['All', 'Websites', 'Apps', 'AI', 'Research'];
+  const projectFilters = ['All', 'Embedded AI', 'Autonomous Systems', 'Computer Vision', 'Systems Design'];
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -42,7 +42,7 @@ const Projects = () => {
   };
 
   return (
-    <section id="projects" className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <section id="projects" className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto bg-[#0a0a0a]">
       <div className="container mx-auto">
         <motion.div 
           ref={ref}
@@ -56,10 +56,12 @@ const Projects = () => {
             variants={itemVariants}
             className="text-center mb-12"
           >
-            <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">My Recent Projects</h2>
-            <div className="w-20 h-1 bg-gradient-to-r from-purple-400 to-pink-600 mx-auto rounded-full"></div>
-            <p className="mt-6 text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              Here are some of my recent projects. Each one was built with a focus on clean code, great user experience, and modern technologies.
+            <h2 className="text-4xl font-bold text-white mb-4 font-mono tracking-wider">[PROJECT_MATRIX]</h2>
+            <div className="w-20 h-1 bg-gradient-to-r from-[#00f6ff] to-[#9d4edd] mx-auto rounded-full"></div>
+            <p className="mt-6 text-lg text-gray-300 max-w-3xl mx-auto">
+              <span className="text-[#00f6ff] font-mono">[STATUS]</span> Recent embedded AI and autonomous systems projects.
+              <br className="hidden tablet:block" />
+              <span className="text-[#9d4edd] font-mono">[FOCUS]</span> Real-time performance, edge optimization, and hardware-AI convergence.
             </p>
           </motion.div>
 
@@ -74,10 +76,10 @@ const Projects = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={() => setActiveFilter(filter === 'All' ? 'All' : filter)}
-                className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
+                className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 font-mono ${
                   activeFilter === filter
-                    ? 'bg-gradient-to-r from-purple-500 to-pink-500 text-white shadow-lg'
-                    : 'bg-white dark:bg-gray-800 border-2 border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-300 hover:border-purple-400 dark:hover:border-purple-400'
+                    ? 'bg-gradient-to-r from-[#00f6ff] to-[#9d4edd] text-[#0a0a0a] shadow-lg hover:shadow-[0_0_15px_rgba(0,246,255,0.5)]'
+                    : 'bg-[#121212] border-2 border-[#00f6ff]/30 text-gray-300 hover:border-[#00f6ff]/60 hover:bg-[#00f6ff]/10'
                 }`}
               >
                 {filter}
@@ -94,16 +96,18 @@ const Projects = () => {
               {/* Project 1 */}
               <motion.div
                 variants={itemVariants}
-                whileHover={{ y: -5, boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)' }}
-                className="relative overflow-hidden rounded-2xl bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 transition-all duration-300"
+                whileHover={{ y: -5, boxShadow: '0 20px 25px -5px rgba(0, 246, 255, 0.2), 0 10px 10px -5px rgba(157, 78, 221, 0.1)' }}
+                className="relative overflow-hidden rounded-2xl bg-[#121212] border border-[#00f6ff]/20 hover:border-[#00f6ff]/50 transition-all duration-300 hover:shadow-[0_0_20px_rgba(0,246,255,0.2)]"
               >
                 <ProjectProp
                   image={EBookReader}
-                  projectTitle="E-Book Reader"
-                  langOrFramework1="React"
-                  langOrFramework2=".NET"
-                  projectDescription="An audio and digital book reader written in ReactJS and .NET"
-                  githubLink="https://github.com/jibril04Afaa/ebook-reader"
+                  projectTitle="Edge-Optimized Image Scaling"
+                  langOrFramework1="C++"
+                  langOrFramework2="Python"
+                  langOrFramework3="Raspberry Pi"
+                  langOrFramework4="libjpeg-turbo"
+                  projectDescription="Modular embedded video pipeline with AI-based super-resolution on Raspberry Pi and Jetson Orin platforms"
+                  githubLink="https://github.com/jibril04Afaa/edge-image-scaling"
                   demoLink="#"
                 />
               </motion.div>
@@ -111,17 +115,17 @@ const Projects = () => {
               {/* Project 2 */}
               <motion.div
                 variants={itemVariants}
-                whileHover={{ y: -5, boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)' }}
-                className="relative overflow-hidden rounded-2xl bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 transition-all duration-300"
+                whileHover={{ y: -5, boxShadow: '0 20px 25px -5px rgba(0, 246, 255, 0.2), 0 10px 10px -5px rgba(157, 78, 221, 0.1)' }}
+                className="relative overflow-hidden rounded-2xl bg-[#121212] border border-[#00f6ff]/20 hover:border-[#00f6ff]/50 transition-all duration-300 hover:shadow-[0_0_20px_rgba(0,246,255,0.2)]"
               >
                 <ProjectProp
                   image={AfricanUB}
-                  projectTitle="African Urban Dictionary"
-                  langOrFramework1="React"
-                  langOrFramework2=".NET"
-                  langOrFramework3="PostgreSQL"
-                  projectDescription="A full stack urban dictionary for African words and phrases built with a React frontend, a .NET backend, and a PostgreSQL database"
-                  githubLink="https://github.com/jibril04Afaa/african-urban-dict"
+                  projectTitle="Autonomous Vehicle Team – Perception"
+                  langOrFramework1="ROS2"
+                  langOrFramework2="Jetson Nano"
+                  langOrFramework3="YOLOv8"
+                  projectDescription="Real-time object detection and tracking system for autonomous vehicles using ROS2, Jetson hardware, and YOLOv8"
+                  githubLink="https://github.com/jibril04Afaa/autonomous-perception"
                   demoLink="#"
                 />
               </motion.div>
@@ -129,16 +133,17 @@ const Projects = () => {
               {/* Project 3 */}
               <motion.div
                 variants={itemVariants}
-                whileHover={{ y: -5, boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)' }}
-                className="relative overflow-hidden rounded-2xl bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 transition-all duration-300"
+                whileHover={{ y: -5, boxShadow: '0 20px 25px -5px rgba(0, 246, 255, 0.2), 0 10px 10px -5px rgba(157, 78, 221, 0.1)' }}
+                className="relative overflow-hidden rounded-2xl bg-[#121212] border border-[#00f6ff]/20 hover:border-[#00f6ff]/50 transition-all duration-300 hover:shadow-[0_0_20px_rgba(0,246,255,0.2)]"
               >
                 <ProjectProp
                   image={KnowTheQuran}
-                  projectTitle="Know The Qur'an"
-                  langOrFramework1="HTML"
-                  langOrFramework2="CSS"
-                  projectDescription="A static website in HTML and CSS to understand what the Holy Qur'an talks about in detail, separated by categories."
-                  githubLink="https://github.com/jibril04Afaa/know-the-quran"
+                  projectTitle="GPU-Accelerated Computer Vision"
+                  langOrFramework1="CUDA"
+                  langOrFramework2="OpenCV"
+                  langOrFramework3="TensorRT"
+                  projectDescription="Real-time computer vision pipeline optimized for GPU acceleration using CUDA, OpenCV, and TensorRT for edge deployment"
+                  githubLink="https://github.com/jibril04Afaa/gpu-cv-pipeline"
                   demoLink="#"
                 />
               </motion.div>
@@ -146,16 +151,17 @@ const Projects = () => {
               {/* Project 4 */}
               <motion.div
                 variants={itemVariants}
-                whileHover={{ y: -5, boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)' }}
-                className="relative overflow-hidden rounded-2xl bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 transition-all duration-300"
+                whileHover={{ y: -5, boxShadow: '0 20px 25px -5px rgba(0, 246, 255, 0.2), 0 10px 10px -5px rgba(157, 78, 221, 0.1)' }}
+                className="relative overflow-hidden rounded-2xl bg-[#121212] border border-[#00f6ff]/20 hover:border-[#00f6ff]/50 transition-all duration-300 hover:shadow-[0_0_20px_rgba(0,246,255,0.2)]"
               >
                 <ProjectProp
                   image={Forex}
-                  projectTitle="Forex Bureau Landing Page"
+                  projectTitle="E-Book Reader (Systems Design Foundation)"
                   langOrFramework1="React"
-                  langOrFramework2="SCSS"
-                  projectDescription="A forex bureau landing page with a currency converter"
-                  githubLink="https://github.com/jibril04Afaa/maltima-fb"
+                  langOrFramework2=".NET"
+                  langOrFramework3="PostgreSQL"
+                  projectDescription="Full-stack application demonstrating systems design principles with React frontend, .NET backend, and PostgreSQL database"
+                  githubLink="https://github.com/jibril04Afaa/ebook-reader"
                   demoLink="#"
                 />
               </motion.div>
@@ -163,19 +169,17 @@ const Projects = () => {
               {/* Project 5 */}
               <motion.div
                 variants={itemVariants}
-                whileHover={{ y: -5, boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)' }}
-                className="relative overflow-hidden rounded-2xl bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 transition-all duration-300"
+                whileHover={{ y: -5, boxShadow: '0 20px 25px -5px rgba(0, 246, 255, 0.2), 0 10px 10px -5px rgba(157, 78, 221, 0.1)' }}
+                className="relative overflow-hidden rounded-2xl bg-[#121212] border border-[#00f6ff]/20 hover:border-[#00f6ff]/50 transition-all duration-300 hover:shadow-[0_0_20px_rgba(0,246,255,0.2)]"
               >
                 <ProjectProp
                   image={FahdrissFarms}
-                  projectTitle="E-Commerce Web App"
-                  langOrFramework1="JavaScript"
-                  langOrFramework2="HTML"
-                  langOrFramework3="Node"
-                  langOrFramework4="Express"
-                  langOrFramework5="MongoDB"
-                  projectDescription="An e-commerce web app for Fahdriss Farms"
-                  githubLink="https://github.com/jibril04Afaa/fahdriss-farms"
+                  projectTitle="African Urban Dictionary (Systems Design Foundation)"
+                  langOrFramework1="React"
+                  langOrFramework2=".NET"
+                  langOrFramework3="PostgreSQL"
+                  projectDescription="Full-stack urban dictionary demonstrating scalable architecture with React frontend, .NET backend, and PostgreSQL database"
+                  githubLink="https://github.com/jibril04Afaa/african-urban-dict"
                   demoLink="#"
                 />
               </motion.div>

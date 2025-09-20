@@ -1,11 +1,10 @@
-import { BrowserRouter as Router, useLocation } from "react-router-dom"
+import { BrowserRouter as Router } from "react-router-dom"
 import { useState, useEffect } from "react"
 import { FaMoon, FaArrowUp } from "react-icons/fa"
 import { BsSun } from "react-icons/bs"
 import { RxHamburgerMenu } from "react-icons/rx"
 import { IoMdClose } from "react-icons/io"
 import { AnimatePresence, motion } from "framer-motion"
-import { useInView } from 'react-intersection-observer';
 
 import Hero from "./components/Hero"
 import About from "./components/About"
@@ -25,7 +24,7 @@ const App = () => {
   // Add scroll to top effect when route changes
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
-  }, [window.location.pathname]);
+  }, []);
 
   // Update document class and localStorage when dark mode changes
   useEffect(() => {
@@ -75,12 +74,12 @@ const App = () => {
   return (
     <Router>
       <AnimatePresence mode="wait">
-        <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-300 overflow-x-hidden">
+        <div className="min-h-screen bg-[#0a0a0a] transition-colors duration-300 overflow-x-hidden">
           {/* Floating Scroll to Top Button */}
           {showScrollToTop && (
             <motion.button
               onClick={scrollToTop}
-              className="fixed bottom-8 right-8 z-50 p-3 bg-blue-500 text-white rounded-full shadow-lg hover:bg-blue-600 transition-colors"
+              className="fixed bottom-8 right-8 z-50 p-3 bg-[#00f6ff] text-[#0a0a0a] rounded-full shadow-lg hover:shadow-[0_0_20px_rgba(0,246,255,0.5)] transition-all duration-300 font-bold"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: 20 }}
@@ -102,28 +101,16 @@ const App = () => {
             }
             
             ::-webkit-scrollbar-track {
-              background: #f1f1f1;
+              background: #0a0a0a;
             }
             
             ::-webkit-scrollbar-thumb {
-              background: #888;
+              background: #00f6ff;
               border-radius: 5px;
             }
             
             ::-webkit-scrollbar-thumb:hover {
-              background: #555;
-            }
-            
-            .dark ::-webkit-scrollbar-track {
-              background: #1f2937;
-            }
-            
-            .dark ::-webkit-scrollbar-thumb {
-              background: #4b5563;
-            }
-            
-            .dark ::-webkit-scrollbar-thumb:hover {
-              background: #6b7280;
+              background: #9d4edd;
             }
           `}</style>
         <div className="relative z-0">
@@ -132,29 +119,29 @@ const App = () => {
             {/* Gradient border container */}
             <div className="relative">
               {/* Gradient background */}
-              <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 blur-sm"></div>
+              <div className="absolute -inset-0.5 bg-gradient-to-r from-[#00f6ff] via-[#9d4edd] to-[#00f6ff] blur-sm"></div>
               {/* Content container */}
-              <div className="relative bg-white dark:bg-gray-900 backdrop-blur-sm px-4 py-2">
+              <div className="relative bg-[#0a0a0a] backdrop-blur-sm px-4 py-2 border border-[#00f6ff]/20">
                 <div className="flex justify-between items-center max-w-7xl mx-auto">
                   
                   {/* Logo */}
                   <div>
-                    <button onClick={() => scrollToSection('hero')} className="text-xl font-bold dark:text-white">JB</button>
+                    <button onClick={() => scrollToSection('hero')} className="text-xl font-bold text-[#00f6ff] font-mono tracking-wider">JB</button>
                   </div>
 
                   {/* Navigation Items - Hidden below tablet, visible on tablet and above */}
-                  <nav className="hidden tablet:flex items-center gap-10 px-6 py-3 rounded-full bg-white dark:bg-gray-800 border-2 dark:border-gray-700 cursor-pointer">
-                    <button onClick={() => scrollToSection('hero')} className="hover:text-gray-600 dark:text-white dark:hover:text-gray-300">Home</button>
-                    <button onClick={() => scrollToSection('about')} className="hover:text-gray-600 dark:text-white dark:hover:text-gray-300">About</button>
-                    <button onClick={() => scrollToSection('skills')} className="hover:text-gray-600 dark:text-white dark:hover:text-gray-300">Skills</button>
-                    <button onClick={() => scrollToSection('projects')} className="hover:text-gray-600 dark:text-white dark:hover:text-gray-300">Projects</button>
-                    <button onClick={() => scrollToSection('xp-education')} className="hover:text-gray-600 dark:text-white dark:hover:text-gray-300">XP + educ</button>
-                    <button onClick={() => scrollToSection('contact')} className="hover:text-gray-600 dark:text-white dark:hover:text-gray-300">Contact</button>
+                  <nav className="hidden tablet:flex items-center gap-10 px-6 py-3 rounded-full bg-[#121212] border-2 border-[#00f6ff]/30 cursor-pointer">
+                    <button onClick={() => scrollToSection('hero')} className="text-white hover:text-[#00f6ff] transition-colors font-medium">Home</button>
+                    <button onClick={() => scrollToSection('about')} className="text-white hover:text-[#00f6ff] transition-colors font-medium">About</button>
+                    <button onClick={() => scrollToSection('skills')} className="text-white hover:text-[#00f6ff] transition-colors font-medium">Skills</button>
+                    <button onClick={() => scrollToSection('projects')} className="text-white hover:text-[#00f6ff] transition-colors font-medium">Projects</button>
+                    <button onClick={() => scrollToSection('xp-education')} className="text-white hover:text-[#00f6ff] transition-colors font-medium">XP + educ</button>
+                    <button onClick={() => scrollToSection('contact')} className="text-white hover:text-[#00f6ff] transition-colors font-medium">Contact</button>
                   </nav>
 
                   {/* Burger menu button - Visible below tablet, hidden on tablet and above */}
                   <button 
-                    className="tablet:hidden text-2xl p-2 dark:text-white"
+                    className="tablet:hidden text-2xl p-2 text-white hover:text-[#00f6ff] transition-colors"
                     onClick={() => setIsMenuOpen(!isMenuOpen)}
                   >
                     {isMenuOpen ? <IoMdClose /> : <RxHamburgerMenu />}
@@ -163,37 +150,37 @@ const App = () => {
                   {/* Light/dark mode button */}
                   <button 
                     onClick={toggleDarkMode}
-                    className="hidden tablet:block p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700"
+                    className="hidden tablet:block p-2 rounded-full hover:bg-[#00f6ff]/10 transition-colors"
                   >
                     {isDarkMode ? 
-                      <BsSun className="text-2xl text-white" /> : 
-                      <FaMoon className="text-2xl" />
+                      <BsSun className="text-2xl text-[#00f6ff]" /> : 
+                      <FaMoon className="text-2xl text-white" />
                     }
                   </button>
                 </div>
 
                 {/* Mobile menu - Slides down when burger is clicked */}
                 <div 
-                  className={`tablet:hidden absolute left-0 right-0 bg-white dark:bg-gray-900 transition-all duration-300 ease-in-out ${
+                  className={`tablet:hidden absolute left-0 right-0 bg-[#121212] border-t border-[#00f6ff]/30 transition-all duration-300 ease-in-out ${
                     isMenuOpen ? "top-full opacity-100" : "-top-[400px] opacity-0"
                   }`}
                 >
                   <div className="flex flex-col items-center gap-4 p-6">
-                    <button onClick={() => scrollToSection('hero')} className="w-full py-2 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800 rounded-lg">Home</button>
-                    <button onClick={() => scrollToSection('about')} className="w-full py-2 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800 rounded-lg">About</button>
-                    <button onClick={() => scrollToSection('skills')} className="w-full py-2 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800 rounded-lg">Skills</button>
-                    <button onClick={() => scrollToSection('projects')} className="w-full py-2 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800 rounded-lg">Projects</button>
-                    <button onClick={() => scrollToSection('xp-education')} className="w-full py-2 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800 rounded-lg">XP + educ</button>
-                    <button onClick={() => scrollToSection('contact')} className="w-full py-2 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800 rounded-lg">Contact</button>
+                    <button onClick={() => scrollToSection('hero')} className="w-full py-2 text-white hover:text-[#00f6ff] hover:bg-[#00f6ff]/10 rounded-lg transition-colors">Home</button>
+                    <button onClick={() => scrollToSection('about')} className="w-full py-2 text-white hover:text-[#00f6ff] hover:bg-[#00f6ff]/10 rounded-lg transition-colors">About</button>
+                    <button onClick={() => scrollToSection('skills')} className="w-full py-2 text-white hover:text-[#00f6ff] hover:bg-[#00f6ff]/10 rounded-lg transition-colors">Skills</button>
+                    <button onClick={() => scrollToSection('projects')} className="w-full py-2 text-white hover:text-[#00f6ff] hover:bg-[#00f6ff]/10 rounded-lg transition-colors">Projects</button>
+                    <button onClick={() => scrollToSection('xp-education')} className="w-full py-2 text-white hover:text-[#00f6ff] hover:bg-[#00f6ff]/10 rounded-lg transition-colors">XP + educ</button>
+                    <button onClick={() => scrollToSection('contact')} className="w-full py-2 text-white hover:text-[#00f6ff] hover:bg-[#00f6ff]/10 rounded-lg transition-colors">Contact</button>
                     
                     {/* Light/dark mode button for mobile */}
                     <button 
                       onClick={toggleDarkMode}
-                      className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700"
+                      className="p-2 rounded-full hover:bg-[#00f6ff]/10 transition-colors"
                     >
                       {isDarkMode ? 
-                        <BsSun className="text-2xl text-white" /> : 
-                        <FaMoon className="text-2xl" />
+                        <BsSun className="text-2xl text-[#00f6ff]" /> : 
+                        <FaMoon className="text-2xl text-white" />
                       }
                     </button>
                   </div>
@@ -203,7 +190,7 @@ const App = () => {
           </div>
 
           {/* Main content sections with scroll-triggered animations */}
-          <main className="dark:text-white">
+          <main className="text-white">
             <motion.section 
               id="hero"
               initial={{ opacity: 0 }}

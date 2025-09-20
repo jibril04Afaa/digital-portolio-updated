@@ -36,21 +36,21 @@ const XPandEduc = () => {
   const experienceData = [
     {
       id: 1,
-      title: 'Web Developer Intern',
-      company: 'Alli Marketplace',
-      timeline: 'Jan 2025 - Present',
-      location: 'Remote',
-      description: 'Developing and maintaining web applications using modern technologies.',
-      skills: ['React', 'Node.js', 'TypeScript', 'MongoDB']
+      title: 'Autonomous Vehicle Team Member',
+      company: 'Penn State Autonomous Vehicle Team',
+      timeline: 'Jan 2024 - Present',
+      location: 'State College, PA',
+      description: 'Working on perception systems for autonomous vehicles using ROS2, Jetson hardware, and YOLOv8 for real-time object detection and tracking.',
+      skills: ['ROS2', 'Jetson', 'YOLOv8', 'Computer Vision', 'Real-time Systems']
     },
     {
       id: 2,
-      title: 'Research Assistant',
-      company: 'Penn State College of Engineering',
-      timeline: 'Jan 2025 - Present',
-      location: 'Remote',
-      description: 'Conducting research in software engineering and data analysis.',
-      skills: ['Python', 'Data Analysis', 'Machine Learning']
+      title: 'Capstone Project Lead',
+      company: 'Penn State University',
+      timeline: 'Aug 2024 - Present',
+      location: 'State College, PA',
+      description: 'Leading development of modular embedded video pipeline with AI-based super-resolution on Raspberry Pi and Jetson Orin platforms.',
+      skills: ['C++', 'Python', 'libjpeg-turbo', 'Embedded Systems', 'AI/ML']
     },
     {
       id: 3,
@@ -58,8 +58,8 @@ const XPandEduc = () => {
       company: 'Axon Information Systems',
       timeline: 'May 2024 - August 2024',
       location: 'Accra, Ghana',
-      description: 'Developed and maintained enterprise software solutions.',
-      skills: ['JavaScript', 'React', 'Python', 'Django']
+      description: 'Developed and maintained enterprise software solutions, gaining foundational experience in systems design.',
+      skills: ['JavaScript', 'React', 'Python', 'Django', 'Systems Design']
     },
     {
       id: 4,
@@ -67,7 +67,7 @@ const XPandEduc = () => {
       company: 'Penn State University',
       timeline: 'May 2024 - August 2024',
       location: 'State College, PA',
-      description: 'Supported residential students and organized community events.',
+      description: 'Supported residential students and organized community events, developing leadership and communication skills.',
       skills: ['Leadership', 'Event Planning', 'Community Building']
     }
   ];
@@ -79,8 +79,8 @@ const XPandEduc = () => {
       institution: 'The Pennsylvania State University',
       timeline: 'Expected Graduation - June 2026',
       location: 'State College, PA',
-      description: 'Focus on Software Engineering and Artificial Intelligence',
-      courses: ['Data Structures', 'Algorithms', 'Web Development', 'Machine Learning']
+      description: 'Focus on Embedded Systems, Artificial Intelligence, and Autonomous Systems',
+      courses: ['Computer Vision', 'Machine Learning', 'Real-Time Systems', 'Parallel Computing', 'Embedded Systems', 'Robotics']
     }
   ];
 

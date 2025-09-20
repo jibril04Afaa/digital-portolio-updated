@@ -99,7 +99,7 @@ const ProjectProp = (props) => {
       onBlur={() => setIsHovered(false)}
       aria-label={`Project: ${props.projectTitle}`}
     >
-      <div className='h-full flex flex-col p-6 bg-white dark:bg-gray-800 rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100 dark:border-gray-700'>
+      <div className='h-full flex flex-col p-6 bg-[#121212] rounded-2xl shadow-sm hover:shadow-[0_0_20px_rgba(0,246,255,0.2)] transition-all duration-300 border border-[#00f6ff]/20 hover:border-[#00f6ff]/50'>
         {/* Project Image */}
         <div className="relative overflow-hidden rounded-xl mb-6 aspect-video">
           <motion.div 
@@ -163,13 +163,13 @@ const ProjectProp = (props) => {
         {/* Project Content */}
         <div className="flex-1 flex flex-col">
           {/* Project Name */}
-          <h2 className='text-xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors'>
+          <h2 className='text-xl font-bold text-white mb-2 group-hover:text-[#00f6ff] transition-colors font-mono'>
             {props.projectTitle}
           </h2>
 
           {/* Project Description */}
           <div className="mb-4 flex-grow">
-            <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
+            <p className="text-gray-300 text-sm leading-relaxed">
               {props.projectDescription}
             </p>
           </div>
@@ -181,7 +181,7 @@ const ProjectProp = (props) => {
                 {techStack.map((tech, index) => (
                   <motion.li 
                     key={index} 
-                    className="bg-gradient-to-r from-purple-100 to-pink-100 text-purple-800 dark:from-purple-900/30 dark:to-pink-900/30 dark:text-purple-300 px-3 py-1 rounded-full text-xs font-medium"
+                    className="bg-gradient-to-r from-[#00f6ff]/20 to-[#9d4edd]/20 text-[#00f6ff] border border-[#00f6ff]/30 px-3 py-1 rounded-lg text-xs font-medium font-mono hover:border-[#00f6ff]/60 transition-colors"
                     variants={buttonVariants}
                     whileHover="hover"
                     whileTap="tap"
@@ -194,13 +194,13 @@ const ProjectProp = (props) => {
           )}
 
           {/* Action Buttons */}
-          <div className='mt-auto pt-4 border-t border-gray-100 dark:border-gray-700 flex gap-3'>
+          <div className='mt-auto pt-4 border-t border-[#00f6ff]/20 flex gap-3'>
             {props.githubLink && (
               <motion.a
                 href={props.githubLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex-1 flex items-center justify-center gap-2 px-4 py-2.5 bg-gray-900 hover:bg-gray-800 text-white text-sm font-medium rounded-lg transition-colors"
+                className="flex-1 flex items-center justify-center gap-2 px-4 py-2.5 bg-[#0a0a0a] hover:bg-[#00f6ff] hover:text-[#0a0a0a] text-[#00f6ff] text-sm font-medium rounded-lg transition-colors border border-[#00f6ff]/30 hover:border-[#00f6ff] font-mono"
                 variants={buttonVariants}
                 whileHover="hover"
                 whileTap="tap"
@@ -215,10 +215,10 @@ const ProjectProp = (props) => {
               href={props.demoLink || '#'}
               target={props.demoLink && props.demoLink !== '#' ? "_blank" : undefined}
               rel={props.demoLink && props.demoLink !== '#' ? "noopener noreferrer" : undefined}
-              className={`flex-1 flex items-center justify-center gap-2 px-4 py-2.5 text-sm font-medium rounded-lg transition-colors ${
+              className={`flex-1 flex items-center justify-center gap-2 px-4 py-2.5 text-sm font-medium rounded-lg transition-colors font-mono ${
                 props.demoLink === '#' || !props.demoLink
-                  ? 'bg-gray-100 dark:bg-gray-700 text-gray-400 dark:text-gray-500 cursor-not-allowed' 
-                  : 'bg-gradient-to-r from-purple-600 to-pink-600 text-white hover:from-purple-700 hover:to-pink-700 shadow-md hover:shadow-lg'
+                  ? 'bg-[#121212] text-gray-500 cursor-not-allowed border border-gray-600' 
+                  : 'bg-gradient-to-r from-[#9d4edd] to-[#00f6ff] text-[#0a0a0a] hover:from-[#9d4edd]/80 hover:to-[#00f6ff]/80 shadow-md hover:shadow-[0_0_15px_rgba(157,78,221,0.5)]'
               }`}
               variants={buttonVariants}
               whileHover={props.demoLink === '#' ? {} : "hover"}

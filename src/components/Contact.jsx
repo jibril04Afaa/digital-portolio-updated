@@ -51,7 +51,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className='py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto'>
+    <section id="contact" className='py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto bg-[#0a0a0a]'>
       <motion.div
         ref={ref}
         initial="hidden"
@@ -64,10 +64,12 @@ const Contact = () => {
           variants={itemVariants}
           className="text-center mb-12"
         >
-          <h2 className='text-4xl font-bold text-gray-900 dark:text-white mb-4'>Get In Touch</h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-purple-400 to-pink-600 mx-auto rounded-full mb-4"></div>
-          <p className='text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto'>
-            Have a project in mind or want to chat? Feel free to reach out!
+          <h2 className='text-4xl font-bold text-white mb-4 font-mono tracking-wider'>[CONTACT_SYSTEM]</h2>
+          <div className="w-20 h-1 bg-gradient-to-r from-[#00f6ff] to-[#9d4edd] mx-auto rounded-full mb-4"></div>
+          <p className='text-lg text-gray-300 max-w-3xl mx-auto'>
+            <span className="text-[#00f6ff] font-mono">[COLLABORATION]</span> Interested in embedded AI, autonomous systems, or computer vision projects?
+            <br className="hidden tablet:block" />
+            <span className="text-[#9d4edd] font-mono">[CONNECT]</span> Connect with researchers and professionals in GPU computing, edge AI, and autonomous systems.
           </p>
         </motion.div>
 
@@ -76,12 +78,12 @@ const Contact = () => {
           {/* Contact Form */}
           <motion.div 
             variants={itemVariants}
-            className='relative overflow-hidden rounded-2xl p-8 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-lg hover:shadow-xl transition-shadow duration-300'
+            className='relative overflow-hidden rounded-2xl p-8 bg-[#121212] border border-[#00f6ff]/20 shadow-lg hover:shadow-[0_0_25px_rgba(0,246,255,0.2)] transition-all duration-300'
           >
-            <div className='absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-purple-500 to-pink-500'></div>
-            <h2 className='text-2xl font-bold mb-6 dark:text-white flex items-center gap-2'>
-              <FiMessageSquare className="text-purple-500" />
-              Send a Message
+            <div className='absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#00f6ff] to-[#9d4edd]'></div>
+            <h2 className='text-2xl font-bold mb-6 text-white flex items-center gap-2 font-mono'>
+              <FiMessageSquare className="text-[#00f6ff]" />
+              [SEND_MESSAGE]
             </h2>
             
             <AnimatePresence>
