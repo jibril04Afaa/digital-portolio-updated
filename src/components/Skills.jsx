@@ -7,11 +7,8 @@ import { SiTypescript } from "react-icons/si"; // TypeScript
 import { SiCplusplus } from "react-icons/si"; // C++
 import { SiC } from "react-icons/si"; // C
 import { SiRos } from "react-icons/si"; // ROS2
-import { SiNvidia } from "react-icons/si"; // CUDA & TensorRT
 import { SiPytorch } from "react-icons/si"; // PyTorch
-import { SiRaspberrypi } from "react-icons/si"; // Raspberry Pi
 import { FaMicrochip } from "react-icons/fa"; // Microchip/Embedded
-import { FaRobot } from "react-icons/fa"; // Robot
 
 
 import { useState } from 'react';
@@ -72,12 +69,8 @@ const Skills = () => {
     { icon: <RiJavascriptFill size={40} />, name: 'JavaScript', level: 70, category: 'languages' },
     { icon: <SiTypescript size={40} />, name: 'TypeScript', level: 65, category: 'languages' },
     { icon: <SiRos size={40} />, name: 'ROS2', level: 80, category: 'frameworks' },
-    { icon: <SiNvidia size={40} />, name: 'CUDA', level: 60, category: 'frameworks' },
-    { icon: <SiPytorch size={40} />, name: 'PyTorch', level: 75, category: 'frameworks' },
-    { icon: <SiNvidia size={40} />, name: 'TensorRT', level: 55, category: 'frameworks' },
-    { icon: <FaMicrochip size={40} />, name: 'Jetson', level: 70, category: 'hardware' },
-    { icon: <SiRaspberrypi size={40} />, name: 'Raspberry Pi', level: 80, category: 'hardware' },
-    { icon: <FaRobot size={40} />, name: 'Computer Vision', level: 75, category: 'concepts' },
+  { icon: <SiPytorch size={40} />, name: 'PyTorch', level: 75, category: 'frameworks' },
+  { icon: <FaMicrochip size={40} />, name: 'Embedded Systems', level: 80, category: 'hardware' },
     { icon: <FaLinux size={40} />, name: 'Linux', level: 85, category: 'tools' },
   ];
 
@@ -91,8 +84,7 @@ const Skills = () => {
     { id: 'all', name: 'All' },
     { id: 'languages', name: 'Programming' },
     { id: 'frameworks', name: 'AI/ML Tools' },
-    { id: 'hardware', name: 'Hardware' },
-    { id: 'concepts', name: 'Concepts' },
+  { id: 'hardware', name: 'Hardware' },
     { id: 'tools', name: 'Tools' },
   ];
   return (
@@ -146,7 +138,7 @@ const Skills = () => {
             initial="hidden"
             animate="show"
           >
-            {categories.map((category) => (
+              {categories.map((category) => (
               <motion.button
                 key={category.id}
                 onClick={() => setActiveCategory(category.id)}
@@ -223,7 +215,7 @@ const Skills = () => {
               [ADDITIONAL_MODULES]
             </h3>
             <div className="flex flex-wrap justify-center gap-2 max-w-2xl mx-auto">
-              {['Git', 'CMake', 'OpenCV', 'YOLOv8', 'Real-Time Systems', 'Parallel Computing', 'Embedded AI', 'Edge Computing', 'GPU Programming', 'Machine Learning'].map((skill, i) => (
+              {['Git', 'CMake', 'OpenCV', 'YOLOv8', 'Embedded AI', 'Edge Computing', 'GPU Programming', 'Machine Learning'].map((skill, i) => (
                 <motion.span
                   key={i}
                   className="px-3 py-1.5 bg-[#121212] text-[#00f6ff] text-sm rounded-lg border border-[#00f6ff]/30 hover:border-[#00f6ff]/60 hover:bg-[#00f6ff]/10 transition-all duration-300 font-mono"

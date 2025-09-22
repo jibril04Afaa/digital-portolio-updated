@@ -40,8 +40,8 @@ const XPandEduc = () => {
       company: 'Penn State Autonomous Vehicle Team',
       timeline: 'Jan 2024 - Present',
       location: 'State College, PA',
-      description: 'Working on perception systems for autonomous vehicles using ROS2, Jetson hardware, and YOLOv8 for real-time object detection and tracking.',
-      skills: ['ROS2', 'Jetson', 'YOLOv8', 'Computer Vision', 'Real-time Systems']
+      description: 'Working on perception systems for autonomous vehicles using ROS2 and YOLOv8 for real-time object detection and tracking. Contributing to a ROS Health Monitor to observe node/topic health, resource usage, and raise alerts.',
+      skills: ['ROS2', 'YOLOv8', 'Real-time Systems']
     },
     {
       id: 2,
@@ -80,7 +80,7 @@ const XPandEduc = () => {
       timeline: 'Expected Graduation - June 2026',
       location: 'State College, PA',
       description: 'Focus on Embedded Systems, Artificial Intelligence, and Autonomous Systems',
-      courses: ['Computer Vision', 'Machine Learning', 'Real-Time Systems', 'Parallel Computing', 'Embedded Systems', 'Robotics']
+      courses: ['Computer Vision', 'Machine Learning', 'Embedded Systems', 'Robotics']
     }
   ];
 

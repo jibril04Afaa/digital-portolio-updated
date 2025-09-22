@@ -245,7 +245,7 @@ const Contact = () => {
                 <div className='flex gap-4'>
                   {[
                     { name: 'GitHub', url: 'https://github.com/jibril04Afaa', icon: 'github' },
-                    { name: 'LinkedIn', url: 'https://linkedin.com/in/jibril04afaa', icon: 'linkedin' },
+                    { name: 'LinkedIn', url: 'https://www.linkedin.com/in/jibrilafaa/', icon: 'linkedin' },
                     { name: 'Twitter', url: 'https://twitter.com/jibril04afaa', icon: 'twitter' }
                   ].map((social) => (
                     <motion.a

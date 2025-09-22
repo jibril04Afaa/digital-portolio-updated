@@ -61,7 +61,7 @@ const About = () => {
             className='text-lg leading-relaxed text-gray-300'
           >
             <span className="text-[#00f6ff] font-mono">[STATUS]</span> Currently a 
-            <span className={`${gradientText} transition-all duration-300 hover:bg-clip-border hover:border-b-2 hover:border-transparent hover:bg-gradient-to-r hover:from-[#00f6ff] hover:via-[#9d4edd] hover:to-[#00f6ff]`}>
+            <span className={`${gradientText} transition-all duration-300 hover:underline`}>
               Senior Computer Science Student
             </span>
             {' '}at Penn State University, pursuing embedded AI and autonomous systems. 
@@ -74,7 +74,7 @@ const About = () => {
             className='text-lg leading-relaxed text-gray-300'
           >
             <span className="text-[#00f6ff] font-mono">[CAPSTONE_PROJECT]</span> Developing a{' '}
-            <span className={`${gradientText} transition-all duration-300 hover:bg-clip-border hover:border-b-2 hover:border-transparent hover:bg-gradient-to-r hover:from-[#00f6ff] hover:via-[#9d4edd] hover:to-[#00f6ff]`}>
+            <span className={`${gradientText} transition-all duration-300 hover:underline`}>
               modular embedded video pipeline
             </span>
             {' '}on Raspberry Pi and Jetson Orin platforms.
@@ -87,12 +87,12 @@ const About = () => {
             className='text-lg leading-relaxed text-gray-300'
           >
             <span className="text-[#00f6ff] font-mono">[TEAM_ROLE]</span> Active member of the{' '}
-            <span className={`${gradientText} transition-all duration-300 hover:bg-clip-border hover:border-b-2 hover:border-transparent hover:bg-gradient-to-r hover:from-[#00f6ff] hover:via-[#9d4edd] hover:to-[#00f6ff]`}>
+            <span className={`${gradientText} transition-all duration-300 hover:underline`}>
               Penn State Autonomous Vehicle Team
             </span>
             {' '}working on perception systems.
             <br className="hidden tablet:block" />
-            <span className="text-[#9d4edd] font-mono">[TECHNOLOGIES]</span> ROS2, Jetson hardware, YOLOv8, CUDA, TensorRT, real-time OS optimization.
+            <span className="text-[#9d4edd] font-mono">[TECHNOLOGIES]</span> ROS2, YOLOv8, real-time OS optimization.
           </motion.p>
 
           {/* Writing Section */}
