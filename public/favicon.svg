@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="JA monogram">
+  <rect width="64" height="64" fill="#0e1116"/>
+  <path fill="#7bdff2" d="M10 10h44v8H10zM10 46h44v8H10zM10 18h8v28h-8zM46 18h8v28h-8z"/>
+  <path fill="#d9f99d" d="M25 22h8v20h-8zM33 34h8v8h-8zM33 22h14v8H33z"/>
+</svg>

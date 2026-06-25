@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" role="img" aria-label="Robotics control system project visual">
+  <rect width="720" height="420" fill="#121821"/>
+  <rect x="88" y="92" width="176" height="176" fill="#202632"/>
+  <rect x="120" y="124" width="112" height="64" fill="#164e63"/>
+  <rect x="144" y="212" width="64" height="24" fill="#d9f99d"/>
+  <rect x="456" y="96" width="128" height="160" fill="#202632"/>
+  <rect x="480" y="120" width="80" height="40" fill="#7bdff2"/>
+  <rect x="496" y="184" width="48" height="48" fill="#f59e0b"/>
+  <path d="M264 180h104v-48h88M264 220h136v-4h56" stroke="#7bdff2" stroke-width="10" fill="none"/>
+  <rect x="144" y="300" width="432" height="32" fill="#0e1116"/>
+  <rect x="184" y="332" width="56" height="32" fill="#2f3744"/>
+  <rect x="480" y="332" width="56" height="32" fill="#2f3744"/>
+</svg>

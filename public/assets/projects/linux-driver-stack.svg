@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" role="img" aria-label="Embedded Linux driver stack project visual">
+  <rect width="720" height="420" fill="#10151c"/>
+  <rect x="96" y="64" width="528" height="72" fill="#202632"/>
+  <rect x="120" y="88" width="128" height="24" fill="#7bdff2"/>
+  <rect x="96" y="176" width="528" height="72" fill="#202632"/>
+  <rect x="120" y="200" width="184" height="24" fill="#d9f99d"/>
+  <rect x="96" y="288" width="528" height="72" fill="#202632"/>
+  <rect x="120" y="312" width="224" height="24" fill="#f59e0b"/>
+  <path d="M360 136v40M360 248v40" stroke="#7bdff2" stroke-width="12"/>
+  <rect x="504" y="88" width="56" height="24" fill="#f59e0b"/>
+  <rect x="504" y="200" width="56" height="24" fill="#7bdff2"/>
+  <rect x="504" y="312" width="56" height="24" fill="#d9f99d"/>
+</svg>

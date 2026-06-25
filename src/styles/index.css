@@ -1,0 +1,176 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800;900&display=swap");
+
+:root {
+  color-scheme: dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background:
+    radial-gradient(circle at top left, rgba(123, 223, 242, 0.1), transparent 28rem),
+    radial-gradient(circle at bottom right, rgba(217, 249, 157, 0.04), transparent 24rem),
+    linear-gradient(135deg, #0e1116 0%, #151922 50%, #10151c 100%);
+  color: #e8edf3;
+}
+
+img,
+svg,
+object {
+  max-width: 100%;
+}
+
+.image-rendering-pixelated {
+  image-rendering: pixelated;
+}
+
+::selection {
+  background: #7bdff2;
+  color: #0e1116;
+}
+
+.pixel-corners {
+  clip-path: polygon(
+    0 10px,
+    10px 10px,
+    10px 0,
+    calc(100% - 10px) 0,
+    calc(100% - 10px) 10px,
+    100% 10px,
+    100% calc(100% - 10px),
+    calc(100% - 10px) calc(100% - 10px),
+    calc(100% - 10px) 100%,
+    10px 100%,
+    10px calc(100% - 10px),
+    0 calc(100% - 10px)
+  );
+}
+
+.pixel-border {
+  border: 2px solid rgba(123, 223, 242, 0.42);
+  box-shadow: 6px 6px 0 #0e1116;
+}
+
+.pixel-border-subtle {
+  border: 2px solid rgba(123, 223, 242, 0.18);
+}
+
+.section-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(123, 223, 242, 0.25) 20%, rgba(123, 223, 242, 0.25) 80%, transparent);
+}
+
+.text-gradient-trace {
+  background: linear-gradient(135deg, #7bdff2 0%, #d9f99d 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.focus-ring {
+  @apply focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-trace;
+}
+
+.skip-link {
+  @apply fixed left-4 top-3 z-50 -translate-y-20 bg-trace px-4 py-2 font-mono text-sm font-bold text-ink transition-transform focus:translate-y-0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+.avatar-gradient-ring {
+  background: linear-gradient(135deg, #7bdff2, #d9f99d, #f59e0b, #f97316, #7bdff2);
+  background-size: 300% 300%;
+  animation: avatar-ring-shift 4s ease infinite;
+  clip-path: polygon(
+    0 10px,
+    10px 10px,
+    10px 0,
+    calc(100% - 10px) 0,
+    calc(100% - 10px) 10px,
+    100% 10px,
+    100% calc(100% - 10px),
+    calc(100% - 10px) calc(100% - 10px),
+    calc(100% - 10px) 100%,
+    10px 100%,
+    10px calc(100% - 10px),
+    0 calc(100% - 10px)
+  );
+}
+
+.avatar-gradient-ring:hover {
+  animation-duration: 2s;
+}
+
+@keyframes avatar-ring-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.avatar-pixel-dot {
+  clip-path: polygon(
+    0 25%,
+    25% 25%,
+    25% 0,
+    75% 0,
+    75% 25%,
+    100% 25%,
+    100% 75%,
+    75% 75%,
+    75% 100%,
+    25% 100%,
+    25% 75%,
+    0 75%
+  );
+  box-shadow: 0 0 10px currentColor;
+}
+
+.avatar-scanline {
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 3px,
+    rgba(123, 223, 242, 0.03) 3px,
+    rgba(123, 223, 242, 0.03) 4px
+  );
+  animation: avatar-scan 8s linear infinite;
+}
+
+@keyframes avatar-scan {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
